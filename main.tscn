@@ -1,0 +1,309 @@
+[gd_scene load_steps=33 format=3 uid="uid://beujavvdidgkb"]
+
+[ext_resource type="Texture2D" uid="uid://daelqgdclxvj0" path="res://Map/map_project_barisal.png" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://cnkjnnnathyyf" path="res://COde/Barishal.gd" id="2_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://2xuj2ixhj44e" path="res://Map/map_project_golden_barisal.png" id="3_h2yge"]
+[ext_resource type="Script" uid="uid://bab7aker8ks0e" path="res://COde/BarishalPlace.gd" id="4_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://b6bf5sllvqets" path="res://Map/map_project_chittagong.png" id="5_lquwl"]
+[ext_resource type="Texture2D" uid="uid://donnfhnlhp7cj" path="res://Map/map_project_golden_chittagong.png" id="6_074og"]
+[ext_resource type="Script" uid="uid://dh554m00xbjqg" path="res://COde/chittagong.gd" id="6_cegan"]
+[ext_resource type="Texture2D" uid="uid://dsd7qd0b4fcr7" path="res://Map/map_project_dhaka.png" id="7_cegan"]
+[ext_resource type="Texture2D" uid="uid://d0ymyx2o4vqk8" path="res://Map/map_project_golden_dhaka.png" id="8_82xsv"]
+[ext_resource type="Script" uid="uid://bjw2q44otm7db" path="res://COde/ChittagongPLace.gd" id="8_getpj"]
+[ext_resource type="Texture2D" uid="uid://dk02uqy8jjei8" path="res://Map/map_project_khulna.png" id="9_getpj"]
+[ext_resource type="Script" uid="uid://jdbowf33c8d" path="res://COde/Dhaka.gd" id="10_htxhm"]
+[ext_resource type="Texture2D" uid="uid://ci7ej5h25sepl" path="res://Map/map_project_golden_khulna.png" id="10_ryguw"]
+[ext_resource type="Texture2D" uid="uid://q0keewvjdbrl" path="res://Map/map_project_mymensingh.png" id="11_d13ii"]
+[ext_resource type="Texture2D" uid="uid://dcji8mdwc5f0t" path="res://Map/map_project_golden_mymensingh.png" id="12_1u8w0"]
+[ext_resource type="Script" uid="uid://d0auj853ce6e5" path="res://COde/Rajsahi.gd" id="12_jq2sk"]
+[ext_resource type="Texture2D" uid="uid://0vf0teg3uhbn" path="res://Map/map_project_rajsahi.png" id="13_0odxb"]
+[ext_resource type="Script" uid="uid://c3v4lyccqrj3a" path="res://COde/DhakaPLace.gd" id="14_4k2k6"]
+[ext_resource type="Texture2D" uid="uid://beuarjfo4bpas" path="res://Map/map_project_golden_rajsahi.png" id="14_lswn8"]
+[ext_resource type="Texture2D" uid="uid://cl2rsnvu56q3n" path="res://Map/map_project_rangpur.png" id="15_a6jrf"]
+[ext_resource type="Script" uid="uid://xfmy48fouug2" path="res://COde/Khulna.gd" id="16_0rl1p"]
+[ext_resource type="Texture2D" uid="uid://sisrqpewstry" path="res://Map/map_project_golden_rangpur.png" id="16_xuqvo"]
+[ext_resource type="Texture2D" uid="uid://bcipvpi22aqy5" path="res://Map/map_project_sylhet.png" id="17_qsp4k"]
+[ext_resource type="Texture2D" uid="uid://c4glq77cp1lov" path="res://Map/map_project_golden_sylhet.png" id="18_kq58d"]
+[ext_resource type="Script" uid="uid://c0r34em1sgl1a" path="res://COde/KhulnaPlace.gd" id="18_ok6jj"]
+[ext_resource type="Script" uid="uid://b73dktuxltpp3" path="res://COde/Mymensingh.gd" id="20_facbu"]
+[ext_resource type="Script" uid="uid://bbcwf5dxs45ck" path="res://COde/MymensinghPlace.gd" id="22_b1qrp"]
+[ext_resource type="Script" uid="uid://cqdttc0xogryj" path="res://COde/RajsahiPlace.gd" id="24_come4"]
+[ext_resource type="Script" uid="uid://d0jt8apf504l5" path="res://COde/Rangpur.gd" id="26_h8e4i"]
+[ext_resource type="Script" uid="uid://dlhp1ak48d64x" path="res://COde/RangpurPlace.gd" id="28_4lmeg"]
+[ext_resource type="Script" uid="uid://cewni1j0ileap" path="res://COde/Sylhet.gd" id="30_0cp0l"]
+[ext_resource type="Script" uid="uid://binxn8cn7gg0v" path="res://COde/SylhetPlace.gd" id="32_d2t1y"]
+
+[node name="Map" type="Node2D"]
+
+[node name="MapProjectBarisal" type="Sprite2D" parent="."]
+position = Vector2(846, 97)
+texture = ExtResource("1_ig7tw")
+script = ExtResource("2_0xm2m")
+
+[node name="Button" type="Button" parent="MapProjectBarisal"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -24.0
+offset_top = -32.0
+offset_right = 24.0
+offset_bottom = 32.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="MapProjectBarisal" groups=["Barishal", "BarishalPlace"]]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MapProjectBarisal/Area2D"]
+polygon = PackedVector2Array(-22, -1, -22, -17, -14, -25, -6, -33, -6, -33, 2, -25, 10, -25, 18, -17, 18, -9, 26, -1, 26, 7, 18, 15, 10, 15, 10, 23, 2, 23, -14, 31, -22, 23)
+
+[node name="MapProjectBarisalPlace" type="Sprite2D" parent="."]
+position = Vector2(441, 490)
+texture = ExtResource("3_h2yge")
+script = ExtResource("4_1bvp3")
+
+[node name="Area2D" type="Area2D" parent="MapProjectBarisalPlace" groups=["BarishalPlace"]]
+position = Vector2(-4, -2)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MapProjectBarisalPlace/Area2D"]
+polygon = PackedVector2Array(-22, -1, -22, -17, -14, -25, -6, -33, -6, -33, 2, -25, 10, -25, 18, -17, 18, -9, 26, -1, 26, 7, 18, 15, 10, 15, 10, 23, 2, 23, -14, 31, -22, 23)
+
+[node name="MapProjectChittagong" type="Sprite2D" parent="."]
+position = Vector2(737, 97)
+texture = ExtResource("5_lquwl")
+script = ExtResource("6_cegan")
+
+[node name="Button" type="Button" parent="MapProjectChittagong"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -24.0
+offset_top = -32.0
+offset_right = 24.0
+offset_bottom = 32.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="MapProjectChittagong" groups=["Chittagong"]]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MapProjectChittagong/Area2D"]
+polygon = PackedVector2Array(-25, 15, -25, -1, -33, -17, -41, -25, -41, -33, -41, -41, -41, -41, -49, -57, -41, -57, -33, -65, -25, -73, -17, -81, -9, -81, -17, -73, -17, -57, -17, -41, -17, -41, -1, -41, -1, -25, 7, -33, 7, -33, 7, -41, 7, -41, 7, -57, 15, -57, 31, -57, 31, -41, 31, -25, 39, -17, 39, -1, 39, 7, 39, 23, 39, 39, 47, 47, 47, 47, 31, 47, 31, 55, 31, 71, 39, 79, 23, 71, 15, 55, 15, 39, 7, 31, 7, 23, 7, 23, 7, 7, 7, -1, -1, 7, -9, -1, -17, 7)
+
+[node name="MapProjectChittagongPlace" type="Sprite2D" parent="."]
+position = Vector2(490, 486)
+texture = ExtResource("6_074og")
+script = ExtResource("8_getpj")
+
+[node name="Area2D" type="Area2D" parent="MapProjectChittagongPlace" groups=["ChittagongPlace"]]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MapProjectChittagongPlace/Area2D"]
+polygon = PackedVector2Array(-25, 15, -25, -1, -33, -17, -41, -25, -41, -33, -41, -41, -41, -41, -49, -57, -41, -57, -33, -65, -25, -73, -17, -81, -9, -81, -17, -73, -17, -57, -17, -41, -17, -41, -1, -41, -1, -25, 7, -33, 7, -33, 7, -41, 7, -41, 7, -57, 15, -57, 31, -57, 31, -41, 31, -25, 39, -17, 39, -1, 39, 7, 39, 23, 39, 39, 47, 47, 47, 47, 31, 47, 31, 55, 31, 71, 39, 79, 23, 71, 15, 55, 15, 39, 7, 31, 7, 23, 7, 23, 7, 7, 7, -1, -1, 7, -9, -1, -17, 7)
+
+[node name="MapProjectDhaka" type="Sprite2D" parent="."]
+position = Vector2(626, 97)
+texture = ExtResource("7_cegan")
+script = ExtResource("10_htxhm")
+
+[node name="Button" type="Button" parent="MapProjectDhaka"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -24.0
+offset_top = -32.0
+offset_right = 24.0
+offset_bottom = 32.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="MapProjectDhaka" groups=["Barishal"]]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MapProjectDhaka/Area2D"]
+polygon = PackedVector2Array(-42, -1, -34, -1, -26, -9, -26, -25, -26, -33, -10, -41, -2, -33, -2, -33, -2, -25, 6, -25, 6, -33, 14, -33, 30, -41, 38, -41, 38, -33, 38, -25, 30, -17, 30, -9, 22, -1, 14, 7, 14, 15, 14, 23, 14, 23, 14, 31, 6, 39, -2, 39, -10, 39, -10, 39, -18, 39, -26, 31, -26, 23, -34, 15)
+
+[node name="MapProjectRajsahi" type="Sprite2D" parent="."]
+position = Vector2(310, 100)
+texture = ExtResource("13_0odxb")
+script = ExtResource("12_jq2sk")
+
+[node name="Button" type="Button" parent="MapProjectRajsahi" groups=["Rajsahi"]]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -24.0
+offset_top = -32.0
+offset_right = 24.0
+offset_bottom = 32.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="MapProjectRajsahi" groups=["Rajsahi"]]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MapProjectRajsahi/Area2D"]
+polygon = PackedVector2Array(-30, -1, -38, -9, -38, -17, -30, -17, -22, -17, -22, -25, -14, -33, -6, -33, 2, -33, 10, -33, 18, -25, 26, -25, 34, -17, 34, -9, 34, -1, 34, -1, 34, 7, 34, 15, 34, 23, 34, 31, 18, 31, 2, 23, -6, 15, -22, 7)
+
+[node name="MapProjectDhakaPlace" type="Sprite2D" parent="."]
+position = Vector2(436, 424)
+texture = ExtResource("8_82xsv")
+script = ExtResource("14_4k2k6")
+
+[node name="Area2D" type="Area2D" parent="MapProjectDhakaPlace" groups=["BarishalPlace"]]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MapProjectDhakaPlace/Area2D"]
+polygon = PackedVector2Array(-42, -1, -34, -1, -26, -9, -26, -25, -26, -33, -10, -41, -2, -33, -2, -33, -2, -25, 6, -25, 6, -33, 14, -33, 30, -41, 38, -41, 38, -33, 38, -25, 30, -17, 30, -9, 22, -1, 14, 7, 14, 15, 14, 23, 14, 23, 14, 31, 6, 39, -2, 39, -10, 39, -10, 39, -18, 39, -26, 31, -26, 23, -34, 15)
+
+[node name="MapProjectRajsahiPlace" type="Sprite2D" parent="."]
+position = Vector2(377, 390)
+texture = ExtResource("14_lswn8")
+script = ExtResource("24_come4")
+
+[node name="Area2D" type="Area2D" parent="MapProjectRajsahiPlace" groups=["RajsahiPlace"]]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MapProjectRajsahiPlace/Area2D"]
+polygon = PackedVector2Array(-30, -1, -38, -9, -38, -17, -30, -17, -22, -17, -22, -25, -14, -33, -6, -33, 2, -33, 10, -33, 18, -25, 26, -25, 34, -17, 34, -9, 34, -1, 34, -1, 34, 7, 34, 15, 34, 23, 34, 31, 18, 31, 2, 23, -6, 15, -22, 7)
+
+[node name="MapProjectKhulna" type="Sprite2D" parent="."]
+position = Vector2(515, 97)
+texture = ExtResource("9_getpj")
+script = ExtResource("16_0rl1p")
+
+[node name="Button" type="Button" parent="MapProjectKhulna"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -24.0
+offset_top = -32.0
+offset_right = 24.0
+offset_bottom = 32.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="MapProjectKhulna" groups=["Barishal"]]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MapProjectKhulna/Area2D"]
+polygon = PackedVector2Array(-27, -17, -19, -25, -27, -33, -27, -41, -27, -49, -27, -57, -19, -57, -11, -49, -3, -41, 5, -41, 5, -33, 21, -17, 29, -9, 21, -9, 29, -1, 29, 15, 29, 23, 29, 39, 29, 47, 21, 47, 21, 47, 21, 47, 21, 47, 5, 47, 5, 47, 5, 47, -3, 55, -11, 47, -11, 31, -11, 15, -11, 7, -19, -9)
+
+[node name="MapProjectKhulnaPlace" type="Sprite2D" parent="."]
+position = Vector2(394, 468)
+texture = ExtResource("10_ryguw")
+script = ExtResource("18_ok6jj")
+
+[node name="Area2D" type="Area2D" parent="MapProjectKhulnaPlace" groups=["BarishalPlace"]]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MapProjectKhulnaPlace/Area2D"]
+position = Vector2(0, 1)
+polygon = PackedVector2Array(-27, -17, -19, -25, -27, -33, -27, -41, -27, -49, -27, -57, -19, -57, -11, -49, -3, -41, 5, -41, 5, -33, 22, -21, 29, -9, 21, -9, 29, -1, 29, 15, 29, 23, 29, 39, 29, 47, 21, 47, 21, 47, 21, 47, 21, 47, 5, 47, 5, 47, 5, 47, -3, 55, -11, 47, -11, 31, -11, 15, -11, 7, -19, -9)
+
+[node name="MapProjectMymensingh" type="Sprite2D" parent="."]
+position = Vector2(427, 97)
+texture = ExtResource("11_d13ii")
+script = ExtResource("20_facbu")
+
+[node name="Button" type="Button" parent="MapProjectMymensingh"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -24.0
+offset_top = -32.0
+offset_right = 24.0
+offset_bottom = 32.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="MapProjectMymensingh" groups=["Mymensingh"]]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MapProjectMymensingh/Area2D"]
+polygon = PackedVector2Array(-27, 7, -35, -1, -35, -17, -27, -33, -19, -25, -11, -25, -3, -25, 5, -17, 13, -25, 21, -17, 29, -9, 29, -9, 37, -1, 37, 7, 21, 7, 13, 15, 13, 23, 5, 23, -3, 23, -11, 23, -11, 7)
+
+[node name="MapProjectMymensinghPlace" type="Sprite2D" parent="."]
+position = Vector2(442, 378)
+texture = ExtResource("12_1u8w0")
+script = ExtResource("22_b1qrp")
+
+[node name="Area2D" type="Area2D" parent="MapProjectMymensinghPlace" groups=["MymensinghPlace"]]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MapProjectMymensinghPlace/Area2D"]
+polygon = PackedVector2Array(-27, 7, -35, -1, -35, -17, -27, -33, -19, -25, -11, -25, -3, -25, 5, -17, 13, -25, 21, -17, 29, -9, 29, -9, 37, -1, 37, 7, 21, 7, 13, 15, 13, 23, 5, 23, -3, 23, -11, 23, -11, 7)
+
+[node name="MapProjectRangpur" type="Sprite2D" parent="."]
+position = Vector2(201, 97)
+texture = ExtResource("15_a6jrf")
+script = ExtResource("26_h8e4i")
+
+[node name="Button" type="Button" parent="MapProjectRangpur"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -24.0
+offset_top = -32.0
+offset_right = 24.0
+offset_bottom = 32.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="MapProjectRangpur" groups=["Rangpur"]]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MapProjectRangpur/Area2D"]
+position = Vector2(0, 2)
+polygon = PackedVector2Array(-41, -1, -41, -9, -41, -17, -33, -17, -33, -25, -41, -33, -33, -33, -33, -41, -25, -33, -17, -25, -9, -25, -9, -33, -1, -33, 7, -25, 15, -17, 23, -17, 31, -17, 39, -1, 39, 7, 31, 23, 23, 31, 15, 31, -1, 23, -25, 15, -33, 7)
+
+[node name="MapProjectRangpurPlace" type="Sprite2D" parent="."]
+position = Vector2(379.5, 333)
+scale = Vector2(1, 0.97)
+texture = ExtResource("16_xuqvo")
+script = ExtResource("28_4lmeg")
+
+[node name="Area2D" type="Area2D" parent="MapProjectRangpurPlace" groups=["RangpurPlace"]]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MapProjectRangpurPlace/Area2D"]
+polygon = PackedVector2Array(-41, -1, -41, -9, -41, -17, -33, -17, -33, -25, -41, -33, -33, -33, -33, -41, -25, -33, -17, -25, -9, -25, -9, -33, -1, -33, 7, -25, 15, -17, 23, -17, 31, -17, 39, -1, 39, 7, 31, 23, 23, 31, 15, 31, -1, 23, -25, 15, -33, 7)
+
+[node name="MapProjectSylhet" type="Sprite2D" parent="."]
+position = Vector2(58, 97)
+texture = ExtResource("17_qsp4k")
+script = ExtResource("30_0cp0l")
+
+[node name="Button" type="Button" parent="MapProjectSylhet"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = -0.0163399
+anchor_right = 0.00980392
+offset_left = -24.0
+offset_top = -32.0
+offset_right = 24.0
+offset_bottom = 32.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="MapProjectSylhet" groups=["Sylhet"]]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MapProjectSylhet/Area2D"]
+polygon = PackedVector2Array(-34, -25, -18, -25, -10, -33, -2, -33, 6, -33, 14, -33, 22, -25, 30, -17, 30, -9, 22, -9, 22, -1, 14, 7, 14, 15, 6, 23, -2, 23, -10, 23, -18, 31, -18, 15, -18, -1, -26, -9)
+
+[node name="MapProjectSylhetPlace" type="Sprite2D" parent="."]
+position = Vector2(496, 390)
+texture = ExtResource("18_kq58d")
+script = ExtResource("32_d2t1y")
+
+[node name="Area2D" type="Area2D" parent="MapProjectSylhetPlace" groups=["SylhetPlace"]]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MapProjectSylhetPlace/Area2D"]
+position = Vector2(0, 2)
+polygon = PackedVector2Array(-34, -25, -18, -25, -10, -33, -2, -33, 6, -33, 14, -33, 22, -25, 30, -17, 30, -9, 22, -9, 22, -1, 14, 7, 14, 15, 6, 23, -2, 23, -10, 23, -18, 31, -18, 15, -18, -1, -26, -9)
+
+[connection signal="button_down" from="MapProjectBarisal/Button" to="MapProjectBarisal" method="_on_button_button_down"]
+[connection signal="button_up" from="MapProjectBarisal/Button" to="MapProjectBarisal" method="_on_button_button_up"]
+[connection signal="area_entered" from="MapProjectBarisal/Area2D" to="MapProjectBarisal" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="MapProjectBarisalPlace/Area2D" to="MapProjectBarisalPlace" method="_on_area_2d_area_entered"]
+[connection signal="button_down" from="MapProjectChittagong/Button" to="MapProjectChittagong" method="_on_button_button_down"]
+[connection signal="button_up" from="MapProjectChittagong/Button" to="MapProjectChittagong" method="_on_button_button_up"]
+[connection signal="area_entered" from="MapProjectChittagong/Area2D" to="MapProjectChittagong" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="MapProjectChittagongPlace/Area2D" to="MapProjectChittagongPlace" method="_on_area_2d_area_entered"]
+[connection signal="button_down" from="MapProjectDhaka/Button" to="MapProjectDhaka" method="_on_button_button_down"]
+[connection signal="button_up" from="MapProjectDhaka/Button" to="MapProjectDhaka" method="_on_button_button_up"]
+[connection signal="area_entered" from="MapProjectDhaka/Area2D" to="MapProjectDhaka" method="_on_area_2d_area_entered"]
+[connection signal="button_down" from="MapProjectRajsahi/Button" to="MapProjectRajsahi" method="_on_button_button_down"]
+[connection signal="button_up" from="MapProjectRajsahi/Button" to="MapProjectRajsahi" method="_on_button_button_up"]
+[connection signal="area_entered" from="MapProjectRajsahi/Area2D" to="MapProjectRajsahi" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="MapProjectDhakaPlace/Area2D" to="MapProjectDhakaPlace" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="MapProjectRajsahiPlace/Area2D" to="MapProjectRajsahiPlace" method="_on_area_2d_area_entered"]
+[connection signal="button_down" from="MapProjectKhulna/Button" to="MapProjectKhulna" method="_on_button_button_down"]
+[connection signal="button_up" from="MapProjectKhulna/Button" to="MapProjectKhulna" method="_on_button_button_up"]
+[connection signal="area_entered" from="MapProjectKhulna/Area2D" to="MapProjectKhulna" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="MapProjectKhulnaPlace/Area2D" to="MapProjectKhulnaPlace" method="_on_area_2d_area_entered"]
+[connection signal="button_down" from="MapProjectMymensingh/Button" to="MapProjectMymensingh" method="_on_button_button_down"]
+[connection signal="button_up" from="MapProjectMymensingh/Button" to="MapProjectMymensingh" method="_on_button_button_up"]
+[connection signal="area_entered" from="MapProjectMymensingh/Area2D" to="MapProjectMymensingh" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="MapProjectMymensinghPlace/Area2D" to="MapProjectMymensinghPlace" method="_on_area_2d_area_entered"]
+[connection signal="button_down" from="MapProjectRangpur/Button" to="MapProjectRangpur" method="_on_button_button_down"]
+[connection signal="button_up" from="MapProjectRangpur/Button" to="MapProjectRangpur" method="_on_button_button_up"]
+[connection signal="area_entered" from="MapProjectRangpur/Area2D" to="MapProjectRangpur" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="MapProjectRangpurPlace/Area2D" to="MapProjectRangpurPlace" method="_on_area_2d_area_entered"]
+[connection signal="button_down" from="MapProjectSylhet/Button" to="MapProjectSylhet" method="_on_button_button_down"]
+[connection signal="button_up" from="MapProjectSylhet/Button" to="MapProjectSylhet" method="_on_button_button_up"]
+[connection signal="area_entered" from="MapProjectSylhet/Area2D" to="MapProjectSylhet" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="MapProjectSylhetPlace/Area2D" to="MapProjectSylhetPlace" method="_on_area_2d_area_entered"]
