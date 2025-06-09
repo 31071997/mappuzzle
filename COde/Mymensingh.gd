@@ -19,4 +19,4 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 	if area.is_in_group('MymensinghPlace'):
 		dragging = false
 		position = Vector2(442, 378)
-		visibility_layer = 1		
+		visibility_layer = 0	

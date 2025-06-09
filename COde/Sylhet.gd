@@ -17,5 +17,5 @@ func _on_button_button_up() -> void:
 func _on_area_2d_area_entered(area: Area2D) -> void:
 	if area.is_in_group('SylhetPlace'):
 		dragging = false
-		visibility_layer = 1
+		visibility_layer = 0
 		position = Vector2(496, 390)
