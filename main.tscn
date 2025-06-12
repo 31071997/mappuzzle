@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://beujavvdidgkb"]
+[gd_scene load_steps=39 format=3 uid="uid://beujavvdidgkb"]
 
 [ext_resource type="Texture2D" uid="uid://daelqgdclxvj0" path="res://Map/map_project_barisal.png" id="1_ig7tw"]
 [ext_resource type="Script" uid="uid://cnkjnnnathyyf" path="res://COde/Barishal.gd" id="2_0xm2m"]
@@ -32,9 +32,23 @@
 [ext_resource type="Script" uid="uid://dlhp1ak48d64x" path="res://COde/RangpurPlace.gd" id="28_4lmeg"]
 [ext_resource type="Script" uid="uid://cewni1j0ileap" path="res://COde/Sylhet.gd" id="30_0cp0l"]
 [ext_resource type="Script" uid="uid://binxn8cn7gg0v" path="res://COde/SylhetPlace.gd" id="32_d2t1y"]
+[ext_resource type="AudioStream" uid="uid://sg4b63hgnros" path="res://Music/O Amar Desher Mati Instrumental _ No Copyright Bangla Song.mp3" id="33_jq2sk"]
+[ext_resource type="Script" uid="uid://dnwj1ux8smtuc" path="res://COde/popup_panel.gd" id="34_4k2k6"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_htxhm"]
 radius = 12.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jq2sk"]
+radius = 9.0
+height = 82.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4k2k6"]
+radius = 8.0
+height = 32.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0rl1p"]
+radius = 8.0
+height = 78.0
 
 [node name="Map" type="Node2D"]
 
@@ -116,6 +130,10 @@ script = ExtResource("8_getpj")
 position = Vector2(-23, -30)
 shape = SubResource("CircleShape2D_htxhm")
 
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="MapProjectChittagongPlace/Area2D"]
+position = Vector2(21, 2)
+shape = SubResource("CapsuleShape2D_jq2sk")
+
 [node name="MapProjectBarisalPlace" type="Sprite2D" parent="."]
 position = Vector2(441, 490)
 texture = ExtResource("3_h2yge")
@@ -159,6 +177,9 @@ script = ExtResource("26_h8e4i")
 [node name="Button" type="Button" parent="MapProjectRangpur"]
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = -0.0277778
+anchor_right = 0.0114379
 offset_left = -24.0
 offset_top = -32.0
 offset_right = 24.0
@@ -179,6 +200,11 @@ script = ExtResource("20_facbu")
 [node name="Button" type="Button" parent="MapProjectMymensingh"]
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = -0.00980392
+anchor_top = 0.00883838
+anchor_right = 0.00816994
+anchor_bottom = -0.0113636
 offset_left = -24.0
 offset_top = -32.0
 offset_right = 24.0
@@ -199,6 +225,9 @@ script = ExtResource("16_0rl1p")
 [node name="Button" type="Button" parent="MapProjectKhulna"]
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_top = -0.0315657
+anchor_bottom = 0.0189394
 offset_left = -24.0
 offset_top = -32.0
 offset_right = 24.0
@@ -219,6 +248,9 @@ script = ExtResource("12_jq2sk")
 [node name="Button" type="Button" parent="MapProjectRajsahi" groups=["Rajsahi"]]
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = -0.0228758
+anchor_right = 0.0163399
 offset_left = -24.0
 offset_top = -32.0
 offset_right = 24.0
@@ -239,6 +271,11 @@ script = ExtResource("10_htxhm")
 [node name="Button" type="Button" parent="MapProjectDhaka"]
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = -0.0163399
+anchor_top = -0.0113636
+anchor_right = 0.0228758
+anchor_bottom = 0.0176768
 offset_left = -24.0
 offset_top = -32.0
 offset_right = 24.0
@@ -259,17 +296,53 @@ script = ExtResource("6_cegan")
 [node name="Button" type="Button" parent="MapProjectChittagong"]
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
-offset_left = -24.0
-offset_top = -32.0
-offset_right = 24.0
-offset_bottom = 32.0
+anchors_preset = -1
+anchor_left = 0.0686275
+anchor_right = 0.0424837
+anchor_bottom = 0.0808081
+offset_left = -35.0
+offset_top = -65.0
+offset_right = 13.0
+offset_bottom = -1.0
 metadata/_edit_use_anchors_ = true
 
 [node name="Area2D" type="Area2D" parent="MapProjectChittagong" groups=["Chittagong"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="MapProjectChittagong/Area2D"]
 position = Vector2(-25, -33)
-shape = SubResource("CircleShape2D_htxhm")
+shape = SubResource("CapsuleShape2D_4k2k6")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="MapProjectChittagong/Area2D"]
+position = Vector2(20, 0)
+shape = SubResource("CapsuleShape2D_0rl1p")
+
+[node name="Button2" type="Button" parent="MapProjectChittagong"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = 0.0424837
+anchor_top = 0.050505
+anchor_right = 0.0163399
+anchor_bottom = 0.0808081
+offset_left = -67.0
+offset_top = -113.0
+offset_right = -19.0
+offset_bottom = -49.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Button3" type="Button" parent="MapProjectChittagong"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = 0.0424837
+anchor_top = 0.050505
+anchor_right = -0.0130719
+anchor_bottom = -0.00757576
+offset_left = -35.0
+offset_top = -65.0
+offset_right = 13.0
+offset_bottom = -1.0
+metadata/_edit_use_anchors_ = true
 
 [node name="MapProjectBarisal" type="Sprite2D" parent="."]
 position = Vector2(846, 97)
@@ -279,10 +352,13 @@ script = ExtResource("2_0xm2m")
 [node name="Button" type="Button" parent="MapProjectBarisal"]
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
-offset_left = -24.0
-offset_top = -32.0
-offset_right = 24.0
-offset_bottom = 32.0
+anchors_preset = -1
+anchor_right = -0.00447053
+anchor_bottom = -0.0572929
+offset_left = -27.0
+offset_top = -33.0
+offset_right = 28.736
+offset_bottom = 76.376
 metadata/_edit_use_anchors_ = true
 
 [node name="Area2D" type="Area2D" parent="MapProjectBarisal" groups=["Barishal", "BarishalPlace"]]
@@ -290,6 +366,27 @@ metadata/_edit_use_anchors_ = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="MapProjectBarisal/Area2D"]
 position = Vector2(-1, 0)
 shape = SubResource("CircleShape2D_htxhm")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("33_jq2sk")
+autoplay = true
+
+[node name="PopupPanel" type="PopupPanel" parent="."]
+size = Vector2i(1152, 647)
+visible = true
+script = ExtResource("34_4k2k6")
+
+[node name="Label" type="Label" parent="PopupPanel"]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 1148.0
+offset_bottom = 643.0
+
+[node name="VScrollBar" type="VScrollBar" parent="PopupPanel"]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 1148.0
+offset_bottom = 643.0
 
 [connection signal="area_entered" from="MapProjectSylhetPlace/Area2D" to="MapProjectSylhetPlace" method="_on_area_2d_area_entered"]
 [connection signal="area_entered" from="MapProjectRangpurPlace/Area2D" to="MapProjectRangpurPlace" method="_on_area_2d_area_entered"]
@@ -320,6 +417,10 @@ shape = SubResource("CircleShape2D_htxhm")
 [connection signal="button_down" from="MapProjectChittagong/Button" to="MapProjectChittagong" method="_on_button_button_down"]
 [connection signal="button_up" from="MapProjectChittagong/Button" to="MapProjectChittagong" method="_on_button_button_up"]
 [connection signal="area_entered" from="MapProjectChittagong/Area2D" to="MapProjectChittagong" method="_on_area_2d_area_entered"]
+[connection signal="button_down" from="MapProjectChittagong/Button2" to="MapProjectChittagong" method="_on_button_button_down"]
+[connection signal="button_up" from="MapProjectChittagong/Button2" to="MapProjectChittagong" method="_on_button_button_up"]
+[connection signal="button_down" from="MapProjectChittagong/Button3" to="MapProjectChittagong" method="_on_button_button_down"]
+[connection signal="button_up" from="MapProjectChittagong/Button3" to="MapProjectChittagong" method="_on_button_button_up"]
 [connection signal="button_down" from="MapProjectBarisal/Button" to="MapProjectBarisal" method="_on_button_button_down"]
 [connection signal="button_up" from="MapProjectBarisal/Button" to="MapProjectBarisal" method="_on_button_button_up"]
 [connection signal="area_entered" from="MapProjectBarisal/Area2D" to="MapProjectBarisal" method="_on_area_2d_area_entered"]

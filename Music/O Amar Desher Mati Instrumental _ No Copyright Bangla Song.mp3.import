@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://sg4b63hgnros"
+path="res://.godot/imported/O Amar Desher Mati Instrumental _ No Copyright Bangla Song.mp3-2184558b34a9a95f55a9a7bf9dbb2944.mp3str"
+
+[deps]
+
+source_file="res://Music/O Amar Desher Mati Instrumental _ No Copyright Bangla Song.mp3"
+dest_files=["res://.godot/imported/O Amar Desher Mati Instrumental _ No Copyright Bangla Song.mp3-2184558b34a9a95f55a9a7bf9dbb2944.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
