@@ -33,7 +33,6 @@
 [ext_resource type="Script" uid="uid://cewni1j0ileap" path="res://COde/Sylhet.gd" id="30_0cp0l"]
 [ext_resource type="Script" uid="uid://binxn8cn7gg0v" path="res://COde/SylhetPlace.gd" id="32_d2t1y"]
 [ext_resource type="AudioStream" uid="uid://sg4b63hgnros" path="res://Music/O Amar Desher Mati Instrumental _ No Copyright Bangla Song.mp3" id="33_jq2sk"]
-[ext_resource type="Script" uid="uid://dnwj1ux8smtuc" path="res://COde/popup_panel.gd" id="34_4k2k6"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_htxhm"]
 radius = 12.0
@@ -49,6 +48,8 @@ height = 32.0
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0rl1p"]
 radius = 8.0
 height = 78.0
+
+[sub_resource type="Theme" id="Theme_jq2sk"]
 
 [node name="Map" type="Node2D"]
 
@@ -202,7 +203,7 @@ modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
 anchors_preset = -1
 anchor_left = -0.00980392
-anchor_top = 0.00883838
+anchor_top = -0.0113636
 anchor_right = 0.00816994
 anchor_bottom = -0.0113636
 offset_left = -24.0
@@ -297,7 +298,7 @@ script = ExtResource("6_cegan")
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
 anchors_preset = -1
-anchor_left = 0.0686275
+anchor_left = 0.0424837
 anchor_right = 0.0424837
 anchor_bottom = 0.0808081
 offset_left = -35.0
@@ -320,7 +321,7 @@ shape = SubResource("CapsuleShape2D_0rl1p")
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
 anchors_preset = -1
-anchor_left = 0.0424837
+anchor_left = 0.0163399
 anchor_top = 0.050505
 anchor_right = 0.0163399
 anchor_bottom = 0.0808081
@@ -334,8 +335,8 @@ metadata/_edit_use_anchors_ = true
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
 anchors_preset = -1
-anchor_left = 0.0424837
-anchor_top = 0.050505
+anchor_left = -0.0130719
+anchor_top = -0.00757576
 anchor_right = -0.0130719
 anchor_bottom = -0.00757576
 offset_left = -35.0
@@ -353,6 +354,8 @@ script = ExtResource("2_0xm2m")
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
 anchors_preset = -1
+anchor_left = -0.00447053
+anchor_top = -0.0572929
 anchor_right = -0.00447053
 anchor_bottom = -0.0572929
 offset_left = -27.0
@@ -372,21 +375,28 @@ stream = ExtResource("33_jq2sk")
 autoplay = true
 
 [node name="PopupPanel" type="PopupPanel" parent="."]
+auto_translate_mode = 1
+initial_position = 2
 size = Vector2i(1152, 647)
-visible = true
-script = ExtResource("34_4k2k6")
 
 [node name="Label" type="Label" parent="PopupPanel"]
 offset_left = 4.0
 offset_top = 4.0
 offset_right = 1148.0
 offset_bottom = 643.0
+theme = SubResource("Theme_jq2sk")
+theme_type_variation = &"GraphFrameTitleLabel"
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+text = "[Dynamic]"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
 
 [node name="VScrollBar" type="VScrollBar" parent="PopupPanel"]
-offset_left = 4.0
-offset_top = 4.0
-offset_right = 1148.0
-offset_bottom = 643.0
+offset_right = 8.0
+offset_bottom = 8.0
 
 [connection signal="area_entered" from="MapProjectSylhetPlace/Area2D" to="MapProjectSylhetPlace" method="_on_area_2d_area_entered"]
 [connection signal="area_entered" from="MapProjectRangpurPlace/Area2D" to="MapProjectRangpurPlace" method="_on_area_2d_area_entered"]
