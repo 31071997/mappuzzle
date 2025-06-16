@@ -375,11 +375,10 @@ shape = SubResource("CircleShape2D_htxhm")
 stream = ExtResource("33_jq2sk")
 autoplay = true
 
-[node name="PopupPanel" type="PopupPanel" parent="."]
+[node name="PopupPanel" type="Window" parent="."]
 auto_translate_mode = 1
 initial_position = 2
 size = Vector2i(1152, 647)
-visible = true
 script = ExtResource("34_4k2k6")
 
 [node name="Label" type="Label" parent="PopupPanel"]
@@ -404,8 +403,10 @@ offset_right = 1148.0
 offset_bottom = 643.0
 
 [node name="Button" type="Button" parent="PopupPanel"]
-offset_right = 1144.0
-offset_bottom = 639.0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 1148.0
+offset_bottom = 643.0
 action_mode = 0
 text = "Exit"
 

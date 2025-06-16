@@ -4,7 +4,7 @@ var dragging = false
 var of = Vector2(0,0)
 @onready var label: Label = $"../PopupPanel/Label"
 func _ready() -> void:
-	label.text = "Barishal is called the Venice of Bangladesh"
+	label.text = "Barishal is called the Venice of the east"
 
 func _process(delta: float) -> void:
 	if dragging:
