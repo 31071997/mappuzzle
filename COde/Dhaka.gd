@@ -1,6 +1,11 @@
 extends Sprite2D
+@onready var popup_panel: PopupPanel = $"../PopupPanel"
+@onready var label_dhaka: Label = $"../PopupPanel/VScrollBar/LabelDhaka"
+
 var dragging = false
 var of = Vector2(0, 0)
+func _ready() -> void:
+	label_dhaka.text = 'Dhaka is the capital of Bangladesh'
 func _process(delta: float) -> void:
 	if dragging:
 		position = get_global_mouse_position() - of
@@ -19,8 +24,8 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 		dragging = false
 		position = Vector2(626, 97)
 		visibility_layer = 0
-	
-	
+		popup_panel.show()
+		label_dhaka.show()	
 	
 	
 	

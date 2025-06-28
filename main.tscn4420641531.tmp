@@ -389,7 +389,6 @@ offset_bottom = 643.0
 
 [node name="LabelBarishal" type="Label" parent="PopupPanel/VScrollBar"]
 visible = false
-layout_mode = 0
 offset_right = 1144.0
 offset_bottom = 639.0
 theme = SubResource("Theme_jq2sk")
@@ -403,70 +402,6 @@ vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="LabelChittagong" type="Label" parent="PopupPanel/VScrollBar"]
-visible = false
-layout_mode = 0
-offset_left = -4.0
-offset_top = -4.0
-offset_right = 36.0
-offset_bottom = 19.0
-
-[node name="LabelDhaka" type="Label" parent="PopupPanel/VScrollBar"]
-visible = false
-offset_right = 1144.0
-offset_bottom = 639.0
-theme = SubResource("Theme_jq2sk")
-theme_type_variation = &"GraphFrameTitleLabel"
-theme_override_colors/font_color = Color(1, 0, 0, 1)
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-text = "[Dynamic]"
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 3
-
-[node name="LabelKhulna" type="Label" parent="PopupPanel/VScrollBar"]
-visible = false
-offset_left = -4.0
-offset_top = -4.0
-offset_right = 36.0
-offset_bottom = 19.0
-
-[node name="LabelMymensingh" type="Label" parent="PopupPanel/VScrollBar"]
-visible = false
-offset_right = 1144.0
-offset_bottom = 639.0
-theme = SubResource("Theme_jq2sk")
-theme_type_variation = &"GraphFrameTitleLabel"
-theme_override_colors/font_color = Color(1, 0, 0, 1)
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-text = "[Dynamic]"
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 3
-
-[node name="LabelRajsahi" type="Label" parent="PopupPanel/VScrollBar"]
-visible = false
-offset_left = -4.0
-offset_top = -4.0
-offset_right = 36.0
-offset_bottom = 19.0
-
-[node name="LabelRangpur" type="Label" parent="PopupPanel/VScrollBar"]
-visible = false
-offset_right = 1144.0
-offset_bottom = 639.0
-theme = SubResource("Theme_jq2sk")
-theme_type_variation = &"GraphFrameTitleLabel"
-theme_override_colors/font_color = Color(1, 0, 0, 1)
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-text = "[Dynamic]"
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 3
-
-[node name="LabelSylhet" type="Label" parent="PopupPanel/VScrollBar"]
 visible = false
 offset_left = -4.0
 offset_top = -4.0
