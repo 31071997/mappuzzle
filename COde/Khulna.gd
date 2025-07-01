@@ -26,3 +26,4 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 		visibility_layer = 0
 		popup_panel.show()
 		label_khulna.show()
+		

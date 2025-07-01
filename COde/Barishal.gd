@@ -5,7 +5,6 @@ var of = Vector2(0,0)
 @onready var label_barishal: Label = $"../PopupPanel/VScrollBar/LabelBarishal"
 func _ready() -> void:
 	label_barishal.text = "Barishal is called the Venice of the east"
-
 func _process(delta: float) -> void:
 	if dragging:
 		position = get_global_mouse_position() - of	
@@ -15,8 +14,6 @@ func _on_button_button_down() -> void:
 
 func _on_button_button_up() -> void:
 	dragging = false
-
-
 func _on_area_2d_area_entered(area: Area2D) -> void:
 	if area.is_in_group('BarishalPlace'):
 		position = Vector2(216, 272) - of

@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3 uid="uid://beujavvdidgkb"]
+[gd_scene load_steps=45 format=3 uid="uid://beujavvdidgkb"]
 
 [ext_resource type="Texture2D" uid="uid://daelqgdclxvj0" path="res://Map/map_project_barisal.png" id="1_ig7tw"]
 [ext_resource type="Script" uid="uid://cnkjnnnathyyf" path="res://COde/Barishal.gd" id="2_0xm2m"]
@@ -50,7 +50,17 @@ height = 32.0
 radius = 8.0
 height = 78.0
 
+[sub_resource type="Theme" id="Theme_4k2k6"]
+
+[sub_resource type="Theme" id="Theme_0rl1p"]
+
 [sub_resource type="Theme" id="Theme_jq2sk"]
+
+[sub_resource type="Theme" id="Theme_ok6jj"]
+
+[sub_resource type="Theme" id="Theme_facbu"]
+
+[sub_resource type="Theme" id="Theme_b1qrp"]
 
 [node name="Map" type="Node2D"]
 
@@ -392,14 +402,12 @@ visible = false
 layout_mode = 0
 offset_right = 1144.0
 offset_bottom = 639.0
-theme = SubResource("Theme_jq2sk")
-theme_type_variation = &"GraphFrameTitleLabel"
+theme = SubResource("Theme_4k2k6")
+theme_type_variation = &"HeaderLarge"
 theme_override_colors/font_color = Color(1, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 text = "[Dynamic]"
-horizontal_alignment = 1
-vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="LabelChittagong" type="Label" parent="PopupPanel/VScrollBar"]
@@ -409,69 +417,84 @@ offset_left = -4.0
 offset_top = -4.0
 offset_right = 36.0
 offset_bottom = 19.0
+theme = SubResource("Theme_0rl1p")
+theme_type_variation = &"HeaderLarge"
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "[Dynamic]"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="LabelDhaka" type="Label" parent="PopupPanel/VScrollBar"]
 visible = false
+layout_mode = 0
 offset_right = 1144.0
 offset_bottom = 639.0
 theme = SubResource("Theme_jq2sk")
-theme_type_variation = &"GraphFrameTitleLabel"
+theme_type_variation = &"HeaderLarge"
 theme_override_colors/font_color = Color(1, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 text = "[Dynamic]"
-horizontal_alignment = 1
-vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="LabelKhulna" type="Label" parent="PopupPanel/VScrollBar"]
 visible = false
+layout_mode = 0
 offset_left = -4.0
 offset_top = -4.0
 offset_right = 36.0
 offset_bottom = 19.0
+theme = SubResource("Theme_ok6jj")
+theme_type_variation = &"HeaderLarge"
+theme_override_colors/font_color = Color(1, 0, 0, 1)
 
 [node name="LabelMymensingh" type="Label" parent="PopupPanel/VScrollBar"]
 visible = false
+layout_mode = 0
 offset_right = 1144.0
 offset_bottom = 639.0
 theme = SubResource("Theme_jq2sk")
-theme_type_variation = &"GraphFrameTitleLabel"
+theme_type_variation = &"HeaderLarge"
 theme_override_colors/font_color = Color(1, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 text = "[Dynamic]"
-horizontal_alignment = 1
-vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="LabelRajsahi" type="Label" parent="PopupPanel/VScrollBar"]
 visible = false
+layout_mode = 0
 offset_left = -4.0
 offset_top = -4.0
 offset_right = 36.0
 offset_bottom = 19.0
+theme = SubResource("Theme_facbu")
+theme_type_variation = &"HeaderLarge"
+theme_override_colors/font_color = Color(1, 0, 0, 1)
 
 [node name="LabelRangpur" type="Label" parent="PopupPanel/VScrollBar"]
 visible = false
+layout_mode = 0
 offset_right = 1144.0
 offset_bottom = 639.0
 theme = SubResource("Theme_jq2sk")
-theme_type_variation = &"GraphFrameTitleLabel"
+theme_type_variation = &"HeaderLarge"
 theme_override_colors/font_color = Color(1, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 text = "[Dynamic]"
-horizontal_alignment = 1
-vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="LabelSylhet" type="Label" parent="PopupPanel/VScrollBar"]
 visible = false
+layout_mode = 0
 offset_left = -4.0
 offset_top = -4.0
 offset_right = 36.0
 offset_bottom = 19.0
+theme = SubResource("Theme_b1qrp")
+theme_type_variation = &"HeaderLarge"
+theme_override_colors/font_color = Color(1, 0, 0, 1)
 
 [node name="Button" type="Button" parent="PopupPanel"]
 offset_left = 4.0

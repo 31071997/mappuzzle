@@ -25,18 +25,4 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 		position = Vector2(626, 97)
 		visibility_layer = 0
 		popup_panel.show()
-		label_dhaka.show()	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	pass # Replace with function body.
+		label_dhaka.show()
