@@ -21,3 +21,4 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 		dragging = false
 		popup_panel.show()
 		label_barishal.show()
+		label_barishal.position = Vector2(10,10)
