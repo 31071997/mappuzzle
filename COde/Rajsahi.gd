@@ -1,8 +1,8 @@
 extends Sprite2D
 @onready var popup_panel: PopupPanel = $"../PopupPanel"
-@onready var label_rajsahi: Label = $"../PopupPanel/VScrollBar/LabelRajsahi"
+@onready var label_rajsahi: Label = $"../PopupPanel/LabelRajsahi"
 func _ready() -> void:
-	label_rajsahi.text = 'Rajsahi is located by the river Padma'
+	label_rajsahi.text = 'Rajsahi'
 var dragging = false
 var of = Vector2(0, 0)
 func _process(delta: float) -> void:
@@ -24,3 +24,4 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 		visibility_layer = 0
 		popup_panel.show()
 		label_rajsahi.show()
+		label_rajsahi.position = Vector2(10,10)

@@ -1,10 +1,10 @@
 extends Sprite2D
 var dragging = false
 @onready var popup_panel: PopupPanel = $"../PopupPanel"
-@onready var label_chittagong: Label = $"../PopupPanel/VScrollBar/LabelChittagong"
+@onready var label_chittagong: Label = $"../PopupPanel/LabelChittagong"
 var of = Vector2(0,0)
 func _ready() -> void:
-	label_chittagong.text = "Chittagong is the trade capital of Bangladesh"
+	label_chittagong.text = "Chattogram"
 func _process(delta: float) -> void:
 	if dragging:
 		position = get_global_mouse_position() - of	
@@ -24,3 +24,4 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 		dragging = false
 		popup_panel.show()
 		label_chittagong.show()
+		label_chittagong.position = Vector2(10,10)

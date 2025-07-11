@@ -2,9 +2,9 @@ extends Sprite2D
 var dragging = false
 var of = Vector2(0, 0)
 @onready var popup_panel: PopupPanel = $"../PopupPanel"
-@onready var label_sylhet: Label = $"../PopupPanel/VScrollBar/LabelSylhet"
+@onready var label_sylhet: Label = $"../PopupPanel/LabelSylhet"
 func _ready() -> void:
-	label_sylhet.text = 'Sylhet is famous for tea cultivation'
+	label_sylhet.text = 'Sylhet'
 func _process(delta: float) -> void:
 	if dragging:
 		position = get_global_mouse_position() - of
@@ -24,3 +24,4 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 		position = Vector2(496, 390)
 		popup_panel.show()
 		label_sylhet.show()
+		label_sylhet.position = Vector2(10,10)

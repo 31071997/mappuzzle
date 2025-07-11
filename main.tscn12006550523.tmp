@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=3 uid="uid://beujavvdidgkb"]
+[gd_scene load_steps=49 format=3 uid="uid://beujavvdidgkb"]
 
 [ext_resource type="Texture2D" uid="uid://daelqgdclxvj0" path="res://Map/map_project_barisal.png" id="1_ig7tw"]
 [ext_resource type="Script" uid="uid://cnkjnnnathyyf" path="res://COde/Barishal.gd" id="2_0xm2m"]
@@ -33,7 +33,9 @@
 [ext_resource type="Script" uid="uid://cewni1j0ileap" path="res://COde/Sylhet.gd" id="30_0cp0l"]
 [ext_resource type="Script" uid="uid://binxn8cn7gg0v" path="res://COde/SylhetPlace.gd" id="32_d2t1y"]
 [ext_resource type="AudioStream" uid="uid://sg4b63hgnros" path="res://Music/O Amar Desher Mati Instrumental _ No Copyright Bangla Song.mp3" id="33_jq2sk"]
-[ext_resource type="Script" uid="uid://ke6rndu31sox" path="res://popup_panel.gd" id="34_4k2k6"]
+[ext_resource type="Script" uid="uid://ke6rndu31sox" path="res://COde/popup_panel.gd" id="34_4k2k6"]
+[ext_resource type="FontFile" uid="uid://dpquv7mhmug8f" path="res://fonts/Press_Start_2P/PressStart2P-Regular.ttf" id="35_ok6jj"]
+[ext_resource type="FontFile" uid="uid://di7txd0iekdwm" path="res://fonts/Viga/Viga-Regular.ttf" id="36_facbu"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_htxhm"]
 radius = 12.0
@@ -52,11 +54,15 @@ height = 78.0
 
 [sub_resource type="Theme" id="Theme_4k2k6"]
 
+[sub_resource type="Theme" id="Theme_come4"]
+
+[sub_resource type="Theme" id="Theme_h8e4i"]
+
 [sub_resource type="Theme" id="Theme_0rl1p"]
 
-[sub_resource type="Theme" id="Theme_jq2sk"]
-
 [sub_resource type="Theme" id="Theme_ok6jj"]
+
+[sub_resource type="Theme" id="Theme_jq2sk"]
 
 [sub_resource type="Theme" id="Theme_facbu"]
 
@@ -389,120 +395,146 @@ autoplay = true
 auto_translate_mode = 1
 initial_position = 2
 size = Vector2i(1152, 647)
+visible = true
 script = ExtResource("34_4k2k6")
 
-[node name="VScrollBar" type="VScrollBar" parent="PopupPanel"]
+[node name="LabelBarishal" type="Label" parent="PopupPanel"]
+visible = false
 offset_left = 4.0
 offset_top = 4.0
 offset_right = 1148.0
 offset_bottom = 643.0
-
-[node name="LabelBarishal" type="Label" parent="PopupPanel/VScrollBar"]
-visible = false
-layout_mode = 0
-offset_right = 1144.0
-offset_bottom = 639.0
 theme = SubResource("Theme_4k2k6")
 theme_type_variation = &"HeaderLarge"
 theme_override_colors/font_color = Color(1, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-text = "[Dynamic]"
+theme_override_fonts/font = ExtResource("35_ok6jj")
 autowrap_mode = 3
 
-[node name="LabelChittagong" type="Label" parent="PopupPanel/VScrollBar"]
-visible = false
-layout_mode = 0
-offset_left = -4.0
-offset_top = -4.0
-offset_right = 36.0
-offset_bottom = 19.0
-theme = SubResource("Theme_0rl1p")
-theme_type_variation = &"HeaderLarge"
-theme_override_colors/font_color = Color(1, 0, 0, 1)
-text = "[Dynamic]"
-horizontal_alignment = 1
-vertical_alignment = 1
+[node name="ScrollBarishal" type="ScrollContainer" parent="PopupPanel/LabelBarishal"]
+offset_left = 144.0
+offset_top = 61.0
+offset_right = 1288.0
+offset_bottom = 572.0
+scale = Vector2(0.75, 1)
+theme = SubResource("Theme_come4")
 
-[node name="LabelDhaka" type="Label" parent="PopupPanel/VScrollBar"]
-visible = false
-layout_mode = 0
-offset_right = 1144.0
-offset_bottom = 639.0
-theme = SubResource("Theme_jq2sk")
-theme_type_variation = &"HeaderLarge"
-theme_override_colors/font_color = Color(1, 0, 0, 1)
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-text = "[Dynamic]"
-autowrap_mode = 3
+[node name="VBoxContainer" type="VBoxContainer" parent="PopupPanel/LabelBarishal/ScrollBarishal"]
+custom_minimum_size = Vector2(1100, 514)
+layout_mode = 2
 
-[node name="LabelKhulna" type="Label" parent="PopupPanel/VScrollBar"]
-visible = false
-layout_mode = 0
-offset_left = -4.0
-offset_top = -4.0
-offset_right = 36.0
-offset_bottom = 19.0
-theme = SubResource("Theme_ok6jj")
-theme_type_variation = &"HeaderLarge"
-theme_override_colors/font_color = Color(1, 0, 0, 1)
+[node name="Label" type="Label" parent="PopupPanel/LabelBarishal/ScrollBarishal/VBoxContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme = SubResource("Theme_h8e4i")
+theme_override_fonts/font = ExtResource("36_facbu")
+theme_override_font_sizes/font_size = 25
+text = "1. Barishal is the Venice of the east"
+structured_text_bidi_override = 4
 
-[node name="LabelMymensingh" type="Label" parent="PopupPanel/VScrollBar"]
+[node name="LabelChittagong" type="Label" parent="PopupPanel"]
 visible = false
-layout_mode = 0
-offset_right = 1144.0
-offset_bottom = 639.0
-theme = SubResource("Theme_jq2sk")
-theme_type_variation = &"HeaderLarge"
-theme_override_colors/font_color = Color(1, 0, 0, 1)
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-text = "[Dynamic]"
-autowrap_mode = 3
-
-[node name="LabelRajsahi" type="Label" parent="PopupPanel/VScrollBar"]
-visible = false
-layout_mode = 0
-offset_left = -4.0
-offset_top = -4.0
-offset_right = 36.0
-offset_bottom = 19.0
-theme = SubResource("Theme_facbu")
-theme_type_variation = &"HeaderLarge"
-theme_override_colors/font_color = Color(1, 0, 0, 1)
-
-[node name="LabelRangpur" type="Label" parent="PopupPanel/VScrollBar"]
-visible = false
-layout_mode = 0
-offset_right = 1144.0
-offset_bottom = 639.0
-theme = SubResource("Theme_jq2sk")
-theme_type_variation = &"HeaderLarge"
-theme_override_colors/font_color = Color(1, 0, 0, 1)
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-text = "[Dynamic]"
-autowrap_mode = 3
-
-[node name="LabelSylhet" type="Label" parent="PopupPanel/VScrollBar"]
-visible = false
-layout_mode = 0
-offset_left = -4.0
-offset_top = -4.0
-offset_right = 36.0
-offset_bottom = 19.0
-theme = SubResource("Theme_b1qrp")
-theme_type_variation = &"HeaderLarge"
-theme_override_colors/font_color = Color(1, 0, 0, 1)
-
-[node name="Button" type="Button" parent="PopupPanel"]
 offset_left = 4.0
 offset_top = 4.0
 offset_right = 1148.0
 offset_bottom = 643.0
+theme = SubResource("Theme_0rl1p")
+theme_type_variation = &"HeaderLarge"
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "[Dynamic]"
+
+[node name="LabelKhulna" type="Label" parent="PopupPanel"]
+visible = false
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 1148.0
+offset_bottom = 643.0
+theme = SubResource("Theme_ok6jj")
+theme_type_variation = &"HeaderLarge"
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+
+[node name="LabelDhaka" type="Label" parent="PopupPanel"]
+visible = false
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 1148.0
+offset_bottom = 643.0
+theme = SubResource("Theme_jq2sk")
+theme_type_variation = &"HeaderLarge"
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+text = "[Dynamic]"
+autowrap_mode = 3
+
+[node name="LabelMymensingh" type="Label" parent="PopupPanel"]
+visible = false
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 1148.0
+offset_bottom = 643.0
+theme = SubResource("Theme_jq2sk")
+theme_type_variation = &"HeaderLarge"
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+text = "[Dynamic]"
+autowrap_mode = 3
+
+[node name="LabelRajsahi" type="Label" parent="PopupPanel"]
+visible = false
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 1148.0
+offset_bottom = 643.0
+theme = SubResource("Theme_facbu")
+theme_type_variation = &"HeaderLarge"
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+
+[node name="LabelRangpur" type="Label" parent="PopupPanel"]
+visible = false
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 1148.0
+offset_bottom = 643.0
+theme = SubResource("Theme_jq2sk")
+theme_type_variation = &"HeaderLarge"
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+text = "[Dynamic]"
+autowrap_mode = 3
+
+[node name="LabelSylhet" type="Label" parent="PopupPanel"]
+visible = false
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 1148.0
+offset_bottom = 643.0
+theme = SubResource("Theme_b1qrp")
+theme_type_variation = &"HeaderLarge"
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+
+[node name="Button" type="Button" parent="."]
+visible = false
+light_mask = 4
+visibility_layer = 4
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 520.0
+offset_top = 575.0
+offset_right = 560.0
+offset_bottom = 629.0
+grow_horizontal = 2
+grow_vertical = 0
 action_mode = 0
 text = "Exit"
+icon_alignment = 1
+vertical_icon_alignment = 2
 
 [connection signal="area_entered" from="MapProjectSylhetPlace/Area2D" to="MapProjectSylhetPlace" method="_on_area_2d_area_entered"]
 [connection signal="area_entered" from="MapProjectRangpurPlace/Area2D" to="MapProjectRangpurPlace" method="_on_area_2d_area_entered"]
@@ -540,4 +572,4 @@ text = "Exit"
 [connection signal="button_down" from="MapProjectBarisal/Button" to="MapProjectBarisal" method="_on_button_button_down"]
 [connection signal="button_up" from="MapProjectBarisal/Button" to="MapProjectBarisal" method="_on_button_button_up"]
 [connection signal="area_entered" from="MapProjectBarisal/Area2D" to="MapProjectBarisal" method="_on_area_2d_area_entered"]
-[connection signal="pressed" from="PopupPanel/Button" to="PopupPanel" method="_on_button_pressed"]
+[connection signal="pressed" from="Button" to="PopupPanel" method="_on_button_pressed"]

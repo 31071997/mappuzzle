@@ -2,12 +2,12 @@ extends Sprite2D
 var dragging = false
 @onready var popup_panel: PopupPanel = $"../PopupPanel"
 var of = Vector2(0,0)
-@onready var label_barishal: Label = $"../PopupPanel/VScrollBar/LabelBarishal"
+@onready var label_barishal: Label = $"../PopupPanel/LabelBarishal"
 func _ready() -> void:
-	label_barishal.text = "Barishal is called the Venice of the east"
+	label_barishal.text = "Barishal"
 func _process(delta: float) -> void:
 	if dragging:
-		position = get_global_mouse_position() - of	
+		position = get_global_mouse_position() - of
 func _on_button_button_down() -> void:
 	dragging = true
 	of = get_global_mouse_position()-global_position
