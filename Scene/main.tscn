@@ -413,6 +413,8 @@ theme_override_fonts/font = ExtResource("35_e0ffi")
 autowrap_mode = 3
 
 [node name="ScrollBarishal" type="ScrollContainer" parent="PopupPanel/LabelBarishal"]
+visible = false
+layout_mode = 0
 offset_left = 144.0
 offset_top = 61.0
 offset_right = 1288.0
@@ -421,10 +423,12 @@ scale = Vector2(0.75, 1)
 theme = SubResource("Theme_come4")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PopupPanel/LabelBarishal/ScrollBarishal"]
+visible = false
 custom_minimum_size = Vector2(1100, 514)
 layout_mode = 2
 
 [node name="Label" type="Label" parent="PopupPanel/LabelBarishal/ScrollBarishal/VBoxContainer"]
+visible = false
 layout_mode = 2
 mouse_default_cursor_shape = 2
 theme = SubResource("Theme_h8e4i")
@@ -444,7 +448,8 @@ theme_type_variation = &"HeaderLarge"
 theme_override_colors/font_color = Color(1, 0, 0, 1)
 theme_override_fonts/font = ExtResource("35_e0ffi")
 
-[node name="ScrollBarishal" type="ScrollContainer" parent="PopupPanel/LabelChittagong"]
+[node name="ScrollBaChittagong" type="ScrollContainer" parent="PopupPanel/LabelChittagong"]
+layout_mode = 0
 offset_left = 144.0
 offset_top = 61.0
 offset_right = 1288.0
@@ -452,11 +457,11 @@ offset_bottom = 572.0
 scale = Vector2(0.75, 1)
 theme = SubResource("Theme_come4")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="PopupPanel/LabelChittagong/ScrollBarishal"]
+[node name="VBoxContainer" type="VBoxContainer" parent="PopupPanel/LabelChittagong/ScrollBaChittagong"]
 custom_minimum_size = Vector2(1100, 514)
 layout_mode = 2
 
-[node name="Label" type="Label" parent="PopupPanel/LabelChittagong/ScrollBarishal/VBoxContainer"]
+[node name="Label" type="Label" parent="PopupPanel/LabelChittagong/ScrollBaChittagong/VBoxContainer"]
 layout_mode = 2
 mouse_default_cursor_shape = 2
 theme = SubResource("Theme_h8e4i")
@@ -476,7 +481,8 @@ theme_type_variation = &"HeaderLarge"
 theme_override_colors/font_color = Color(1, 0, 0, 1)
 theme_override_fonts/font = ExtResource("35_e0ffi")
 
-[node name="ScrollBarishal" type="ScrollContainer" parent="PopupPanel/LabelKhulna"]
+[node name="ScrollKhulna" type="ScrollContainer" parent="PopupPanel/LabelKhulna"]
+layout_mode = 0
 offset_left = 144.0
 offset_top = 61.0
 offset_right = 1288.0
@@ -484,11 +490,11 @@ offset_bottom = 572.0
 scale = Vector2(0.75, 1)
 theme = SubResource("Theme_come4")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="PopupPanel/LabelKhulna/ScrollBarishal"]
+[node name="VBoxContainer" type="VBoxContainer" parent="PopupPanel/LabelKhulna/ScrollKhulna"]
 custom_minimum_size = Vector2(1100, 514)
 layout_mode = 2
 
-[node name="Label" type="Label" parent="PopupPanel/LabelKhulna/ScrollBarishal/VBoxContainer"]
+[node name="Label" type="Label" parent="PopupPanel/LabelKhulna/ScrollKhulna/VBoxContainer"]
 layout_mode = 2
 mouse_default_cursor_shape = 2
 theme = SubResource("Theme_h8e4i")
@@ -512,7 +518,9 @@ theme_override_fonts/font = ExtResource("35_e0ffi")
 text = "[Dynamic]"
 autowrap_mode = 3
 
-[node name="ScrollBarishal" type="ScrollContainer" parent="PopupPanel/LabelDhaka"]
+[node name="ScrollDhaka" type="ScrollContainer" parent="PopupPanel/LabelDhaka"]
+visible = false
+layout_mode = 0
 offset_left = 144.0
 offset_top = 61.0
 offset_right = 1288.0
@@ -520,11 +528,13 @@ offset_bottom = 572.0
 scale = Vector2(0.75, 1)
 theme = SubResource("Theme_come4")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="PopupPanel/LabelDhaka/ScrollBarishal"]
+[node name="VBoxContainer" type="VBoxContainer" parent="PopupPanel/LabelDhaka/ScrollDhaka"]
+visible = false
 custom_minimum_size = Vector2(1100, 514)
 layout_mode = 2
 
-[node name="Label" type="Label" parent="PopupPanel/LabelDhaka/ScrollBarishal/VBoxContainer"]
+[node name="LabelD" type="Label" parent="PopupPanel/LabelDhaka/ScrollDhaka/VBoxContainer"]
+visible = false
 layout_mode = 2
 mouse_default_cursor_shape = 2
 theme = SubResource("Theme_h8e4i")
@@ -548,7 +558,8 @@ theme_override_fonts/font = ExtResource("35_e0ffi")
 text = "[Dynamic]"
 autowrap_mode = 3
 
-[node name="ScrollBarishal" type="ScrollContainer" parent="PopupPanel/LabelMymensingh"]
+[node name="ScrollMymensingh" type="ScrollContainer" parent="PopupPanel/LabelMymensingh"]
+layout_mode = 0
 offset_left = 144.0
 offset_top = 61.0
 offset_right = 1288.0
@@ -556,11 +567,11 @@ offset_bottom = 572.0
 scale = Vector2(0.75, 1)
 theme = SubResource("Theme_come4")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="PopupPanel/LabelMymensingh/ScrollBarishal"]
+[node name="VBoxContainer" type="VBoxContainer" parent="PopupPanel/LabelMymensingh/ScrollMymensingh"]
 custom_minimum_size = Vector2(1100, 514)
 layout_mode = 2
 
-[node name="Label" type="Label" parent="PopupPanel/LabelMymensingh/ScrollBarishal/VBoxContainer"]
+[node name="Label" type="Label" parent="PopupPanel/LabelMymensingh/ScrollMymensingh/VBoxContainer"]
 layout_mode = 2
 mouse_default_cursor_shape = 2
 theme = SubResource("Theme_h8e4i")
@@ -580,7 +591,8 @@ theme_type_variation = &"HeaderLarge"
 theme_override_colors/font_color = Color(1, 0, 0, 1)
 theme_override_fonts/font = ExtResource("35_e0ffi")
 
-[node name="ScrollBarishal" type="ScrollContainer" parent="PopupPanel/LabelRajsahi"]
+[node name="ScrollRajsahi" type="ScrollContainer" parent="PopupPanel/LabelRajsahi"]
+layout_mode = 0
 offset_left = 144.0
 offset_top = 61.0
 offset_right = 1288.0
@@ -588,11 +600,11 @@ offset_bottom = 572.0
 scale = Vector2(0.75, 1)
 theme = SubResource("Theme_come4")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="PopupPanel/LabelRajsahi/ScrollBarishal"]
+[node name="VBoxContainer" type="VBoxContainer" parent="PopupPanel/LabelRajsahi/ScrollRajsahi"]
 custom_minimum_size = Vector2(1100, 514)
 layout_mode = 2
 
-[node name="Label" type="Label" parent="PopupPanel/LabelRajsahi/ScrollBarishal/VBoxContainer"]
+[node name="Label" type="Label" parent="PopupPanel/LabelRajsahi/ScrollRajsahi/VBoxContainer"]
 layout_mode = 2
 mouse_default_cursor_shape = 2
 theme = SubResource("Theme_h8e4i")
@@ -616,7 +628,8 @@ theme_override_fonts/font = ExtResource("35_e0ffi")
 text = "[Dynamic]"
 autowrap_mode = 3
 
-[node name="ScrollBarishal" type="ScrollContainer" parent="PopupPanel/LabelRangpur"]
+[node name="ScrollRangpur" type="ScrollContainer" parent="PopupPanel/LabelRangpur"]
+layout_mode = 0
 offset_left = 144.0
 offset_top = 61.0
 offset_right = 1288.0
@@ -624,11 +637,11 @@ offset_bottom = 572.0
 scale = Vector2(0.75, 1)
 theme = SubResource("Theme_come4")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="PopupPanel/LabelRangpur/ScrollBarishal"]
+[node name="VBoxContainer" type="VBoxContainer" parent="PopupPanel/LabelRangpur/ScrollRangpur"]
 custom_minimum_size = Vector2(1100, 514)
 layout_mode = 2
 
-[node name="Label" type="Label" parent="PopupPanel/LabelRangpur/ScrollBarishal/VBoxContainer"]
+[node name="Label" type="Label" parent="PopupPanel/LabelRangpur/ScrollRangpur/VBoxContainer"]
 layout_mode = 2
 mouse_default_cursor_shape = 2
 theme = SubResource("Theme_h8e4i")
@@ -648,7 +661,8 @@ theme_type_variation = &"HeaderLarge"
 theme_override_colors/font_color = Color(1, 0, 0, 1)
 theme_override_fonts/font = ExtResource("35_e0ffi")
 
-[node name="ScrollBarishal" type="ScrollContainer" parent="PopupPanel/LabelSylhet"]
+[node name="ScrollSylhet" type="ScrollContainer" parent="PopupPanel/LabelSylhet"]
+layout_mode = 0
 offset_left = 144.0
 offset_top = 61.0
 offset_right = 1288.0
@@ -656,17 +670,18 @@ offset_bottom = 572.0
 scale = Vector2(0.75, 1)
 theme = SubResource("Theme_come4")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="PopupPanel/LabelSylhet/ScrollBarishal"]
+[node name="VBoxContainer" type="VBoxContainer" parent="PopupPanel/LabelSylhet/ScrollSylhet"]
 custom_minimum_size = Vector2(1100, 514)
 layout_mode = 2
 
-[node name="Label" type="Label" parent="PopupPanel/LabelSylhet/ScrollBarishal/VBoxContainer"]
+[node name="Label" type="Label" parent="PopupPanel/LabelSylhet/ScrollSylhet/VBoxContainer"]
 layout_mode = 2
 mouse_default_cursor_shape = 2
 theme = SubResource("Theme_h8e4i")
 theme_override_fonts/font = ExtResource("36_7n7pe")
 theme_override_font_sizes/font_size = 25
-text = "1. Barishal is the Venice of the east"
+text = "1. Dhaka is the Capital of Bangladesh
+2. It is situated at the central area of Bangladesh"
 structured_text_bidi_override = 4
 
 [node name="Button" type="Button" parent="PopupPanel"]
