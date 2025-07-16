@@ -519,7 +519,6 @@ text = "[Dynamic]"
 autowrap_mode = 3
 
 [node name="ScrollDhaka" type="ScrollContainer" parent="PopupPanel/LabelDhaka"]
-visible = false
 layout_mode = 0
 offset_left = 144.0
 offset_top = 61.0
@@ -529,18 +528,30 @@ scale = Vector2(0.75, 1)
 theme = SubResource("Theme_come4")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PopupPanel/LabelDhaka/ScrollDhaka"]
-visible = false
 custom_minimum_size = Vector2(1100, 514)
 layout_mode = 2
 
-[node name="LabelD" type="Label" parent="PopupPanel/LabelDhaka/ScrollDhaka/VBoxContainer"]
-visible = false
+[node name="Label" type="Label" parent="PopupPanel/LabelDhaka/ScrollDhaka/VBoxContainer"]
 layout_mode = 2
 mouse_default_cursor_shape = 2
 theme = SubResource("Theme_h8e4i")
 theme_override_fonts/font = ExtResource("36_7n7pe")
 theme_override_font_sizes/font_size = 25
-text = "1. Barishal is the Venice of the east"
+text = "1. Dhaka is the Capital of Bangladesh
+2. It is situated at the central area of Bangladesh. (By the bank of Buriganga)
+3. Biggest district - Tangail, Smallest District - Narayanganj.
+4. This is the most populated division.  population is 4,42,15, 107  (according to the people and house count - 2024)
+5. It has border with all divisions of Bangladesh except Rangpur and doesn't have any boarder neighbouring country
+6. It has 13 districts in total: Dhaka, Gazipur, Norsinghdi, Tangail, Kishorgonj, Munshigang, Manikganj, Madaripur, Shariatpur, Gapalganj, Faridpur, and Rajabari.
+7. it has 70 pirlament seats
+8. Consists of 4 city coorporation,  123 sub-district, 58 municipalties
+9. It's area is 20,539 square kilometer
+10. GDP Of this division is 221.73 billion markin markin dollar
+11.
+12. Dhaka was declared capital of Bangladesh five times, in 1610, 1660, 1905, 1947 and 1971
+14. In 1901, electricity was first introduced to Dhaka.
+15. Some famous personalities from this division are Nawab Abdul Gani, Khaja Ahsan Ullah, Nawab Salimullah, Khaja Najimuddin,  etc.
+14. Its was formarly known as  \"Jahangirnagar\".  it was named after mughal emperror Jahangir. "
 structured_text_bidi_override = 4
 
 [node name="LabelMymensingh" type="Label" parent="PopupPanel"]
@@ -680,8 +691,6 @@ mouse_default_cursor_shape = 2
 theme = SubResource("Theme_h8e4i")
 theme_override_fonts/font = ExtResource("36_7n7pe")
 theme_override_font_sizes/font_size = 25
-text = "1. Dhaka is the Capital of Bangladesh
-2. It is situated at the central area of Bangladesh"
 structured_text_bidi_override = 4
 
 [node name="Button" type="Button" parent="PopupPanel"]
