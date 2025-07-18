@@ -461,24 +461,14 @@ theme = SubResource("Theme_come4")
 custom_minimum_size = Vector2(1100, 514)
 layout_mode = 2
 
-[node name="Label" type="Label" parent="PopupPanel/LabelChittagong/ScrollBaChittagong/VBoxContainer"]
+[node name="LabelChattogram" type="Label" parent="PopupPanel/LabelChittagong/ScrollBaChittagong/VBoxContainer"]
+custom_minimum_size = Vector2(100, 500)
 layout_mode = 2
 mouse_default_cursor_shape = 2
 theme = SubResource("Theme_h8e4i")
 theme_override_fonts/font = ExtResource("36_7n7pe")
 theme_override_font_sizes/font_size = 25
-text = "1. Chattogram is the largest division of Bangladesh.
-2. Population is 3,32,02,326 according to populationa and house count 2022.
-3.  Divisional center is Chattogram.
-4. GDP 193 billion markin dolar.
-5. Economy of this division relies on tourisom, agriculture and industry.
-6. World's longest sea beach Cox's Bazar and only coral island of Bangladesh Saint Martin is situated in this division.
-7. It has 11 districts. Chattogram, Cox's Bazar, Khagrachari, Rangamati, Bandarban, Feni, Laxmipur, Cumilla, Bhrammhonbaria, Chandpur and Noakhali.
-8. Largest district is Rangamati and smallest district is Feni. 
-9. This division has three hilli districts and is famous for it's hill tracks and sea beaches.
-10. This division holds 1 city corrporation, 99 sub-dirtricts and 16 parliamentary seats.
-11. Formar name Islamabad.
-12. Chittagong is known as 'queen of the east', 'business capital' and 'healthy ' "
+autowrap_mode = 3
 structured_text_bidi_override = 4
 
 [node name="LabelKhulna" type="Label" parent="PopupPanel"]
@@ -542,27 +532,14 @@ theme = SubResource("Theme_come4")
 custom_minimum_size = Vector2(1100, 514)
 layout_mode = 2
 
-[node name="Label" type="Label" parent="PopupPanel/LabelDhaka/ScrollDhaka/VBoxContainer"]
+[node name="Labeldescribe" type="Label" parent="PopupPanel/LabelDhaka/ScrollDhaka/VBoxContainer"]
+custom_minimum_size = Vector2(100, 500)
 layout_mode = 2
 mouse_default_cursor_shape = 2
 theme = SubResource("Theme_h8e4i")
 theme_override_fonts/font = ExtResource("36_7n7pe")
 theme_override_font_sizes/font_size = 25
-text = "1. Dhaka is the Capital of Bangladesh
-2. It is situated at the central area of Bangladesh. (By the bank of Buriganga)
-3. Divisional center is Bangladesh
-4. Biggest district - Tangail, Smallest District - Narayanganj.
-5. This is the most populated division.  population is 4,42,15, 107  (according to the people and house count - 2024)
-6. It has border with all divisions of Bangladesh except Rangpur and doesn't have any boarder neighbouring country
-7. It has 13 districts in total: Dhaka, Gazipur, Norsinghdi, Tangail, Kishorgonj, Munshigang, Manikganj, Madaripur, Shariatpur, Gapalganj, Faridpur, and Rajabari.
-8. it has 70 parliamentary seats.
-9. Consists of 4 city coorporation,  123 sub-district, 58 municipalties.
-10. It's area is 20,539 square kilometer.
-11. GDP Of this division is 221.73 billion markin markin dollar
-12. Dhaka was declared capital of Bangladesh in 1971. It was declared as capital five times in total, in 1610, 1660, 1905, 1947 and 1971.
-13. In 1901, electricity was first introduced to Dhaka.
-14. Some famous personalities from this division are Nawab Abdul Gani, Khaja Ahsan Ullah, Nawab Salimullah, Khaja Najimuddin,  etc.
-15. Its was formarly known as  \"Jahangirnagar\".  it was named after mughal emperror Jahangir. "
+autowrap_mode = 3
 structured_text_bidi_override = 4
 
 [node name="LabelMymensingh" type="Label" parent="PopupPanel"]
@@ -705,6 +682,7 @@ theme_override_font_sizes/font_size = 25
 structured_text_bidi_override = 4
 
 [node name="Button" type="Button" parent="PopupPanel"]
+visible = false
 top_level = true
 anchors_preset = 7
 anchor_left = 0.5

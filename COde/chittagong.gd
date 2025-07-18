@@ -2,8 +2,13 @@ extends Sprite2D
 var dragging = false
 @onready var popup_panel: PopupPanel = $"../PopupPanel"
 @onready var label_chittagong: Label = $"../PopupPanel/LabelChittagong"
+@onready var label_chattogram: Label = $"../PopupPanel/LabelChittagong/ScrollBaChittagong/VBoxContainer/LabelChattogram"
 var of = Vector2(0,0)
 func _ready() -> void:
+	var url = 'res://text/Chattogram.txt'
+	var file = FileAccess.open(url, FileAccess.READ)
+	var txt = file.get_as_text()
+	label_chattogram.text = txt
 	label_chittagong.text = "Chattogram"
 func _process(delta: float) -> void:
 	if dragging:

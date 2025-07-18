@@ -1,10 +1,15 @@
 extends Sprite2D
 @onready var popup_panel: PopupPanel = $"../PopupPanel"
 @onready var label_dhaka: Label = $"../PopupPanel/LabelDhaka"
+@onready var labeldescribe: Label = $"../PopupPanel/LabelDhaka/ScrollDhaka/VBoxContainer/Labeldescribe"
 var dragging = false
 var of = Vector2(0, 0)
 func _ready() -> void:
+	var url = 'res://text/Dhaka.txt'
+	var file = FileAccess.open(url, FileAccess.READ)
+	var txt = file.get_as_text()
 	label_dhaka.text = 'Dhaka'
+	labeldescribe.text = txt
 func _process(delta: float) -> void:
 	if dragging:
 		position = get_global_mouse_position() - of
