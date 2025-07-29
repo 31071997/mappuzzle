@@ -395,7 +395,6 @@ autoplay = true
 auto_translate_mode = 1
 initial_position = 2
 size = Vector2i(1152, 647)
-visible = true
 script = ExtResource("34_ryobp")
 
 [node name="LabelBarishal" type="Label" parent="PopupPanel"]
@@ -413,7 +412,6 @@ theme_override_fonts/font = ExtResource("35_e0ffi")
 autowrap_mode = 3
 
 [node name="ScrollBarishal" type="ScrollContainer" parent="PopupPanel/LabelBarishal"]
-visible = false
 layout_mode = 0
 offset_left = 144.0
 offset_top = 61.0
@@ -423,12 +421,10 @@ scale = Vector2(0.75, 1)
 theme = SubResource("Theme_come4")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PopupPanel/LabelBarishal/ScrollBarishal"]
-visible = false
 custom_minimum_size = Vector2(1100, 514)
 layout_mode = 2
 
 [node name="Label" type="Label" parent="PopupPanel/LabelBarishal/ScrollBarishal/VBoxContainer"]
-visible = false
 layout_mode = 2
 mouse_default_cursor_shape = 2
 theme = SubResource("Theme_h8e4i")
@@ -682,7 +678,6 @@ theme_override_font_sizes/font_size = 25
 structured_text_bidi_override = 4
 
 [node name="Button" type="Button" parent="PopupPanel"]
-visible = false
 top_level = true
 anchors_preset = 7
 anchor_left = 0.5

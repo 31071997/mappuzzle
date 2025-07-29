@@ -3,7 +3,12 @@ var dragging = false
 @onready var popup_panel: PopupPanel = $"../PopupPanel"
 var of = Vector2(0,0)
 @onready var label_barishal: Label = $"../PopupPanel/LabelBarishal"
+@onready var labeldescribe: Label = $"../PopupPanel/LabelBarishal/ScrollBarishal/VBoxContainer/Label"
 func _ready() -> void:
+	var url = 'res://text/Barishal.txt'
+	var file = FileAccess.open(url, FileAccess.READ)
+	var txt = file.get_as_text()
+	labeldescribe.text = txt
 	label_barishal.text = "Barishal"
 func _process(delta: float) -> void:
 	if dragging:
