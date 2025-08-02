@@ -430,7 +430,7 @@ mouse_default_cursor_shape = 2
 theme = SubResource("Theme_h8e4i")
 theme_override_fonts/font = ExtResource("36_7n7pe")
 theme_override_font_sizes/font_size = 25
-text = "1. Barishal is the Venice of the east"
+autowrap_mode = 3
 structured_text_bidi_override = 4
 
 [node name="LabelChittagong" type="Label" parent="PopupPanel"]
@@ -498,6 +498,7 @@ theme = SubResource("Theme_h8e4i")
 theme_override_fonts/font = ExtResource("36_7n7pe")
 theme_override_font_sizes/font_size = 25
 text = "1. Barishal is the Venice of the east"
+autowrap_mode = 3
 structured_text_bidi_override = 4
 
 [node name="LabelDhaka" type="Label" parent="PopupPanel"]
@@ -572,7 +573,7 @@ mouse_default_cursor_shape = 2
 theme = SubResource("Theme_h8e4i")
 theme_override_fonts/font = ExtResource("36_7n7pe")
 theme_override_font_sizes/font_size = 25
-text = "1. Barishal is the Venice of the east"
+autowrap_mode = 3
 structured_text_bidi_override = 4
 
 [node name="LabelRajsahi" type="Label" parent="PopupPanel"]
@@ -606,6 +607,7 @@ theme = SubResource("Theme_h8e4i")
 theme_override_fonts/font = ExtResource("36_7n7pe")
 theme_override_font_sizes/font_size = 25
 text = "1. Barishal is the Venice of the east"
+autowrap_mode = 3
 structured_text_bidi_override = 4
 
 [node name="LabelRangpur" type="Label" parent="PopupPanel"]
@@ -643,6 +645,7 @@ theme = SubResource("Theme_h8e4i")
 theme_override_fonts/font = ExtResource("36_7n7pe")
 theme_override_font_sizes/font_size = 25
 text = "1. Barishal is the Venice of the east"
+autowrap_mode = 3
 structured_text_bidi_override = 4
 
 [node name="LabelSylhet" type="Label" parent="PopupPanel"]
@@ -675,6 +678,7 @@ mouse_default_cursor_shape = 2
 theme = SubResource("Theme_h8e4i")
 theme_override_fonts/font = ExtResource("36_7n7pe")
 theme_override_font_sizes/font_size = 25
+autowrap_mode = 3
 structured_text_bidi_override = 4
 
 [node name="Button" type="Button" parent="PopupPanel"]
