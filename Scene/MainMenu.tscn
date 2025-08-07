@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://cn6dfd3d2r5iv"]
+[gd_scene load_steps=2 format=3 uid="uid://cn6dfd3d2r5iv"]
+
+[ext_resource type="FontFile" uid="uid://dpquv7mhmug8f" path="res://fonts/Press_Start_2P/PressStart2P-Regular.ttf" id="1_rrxvj"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -21,6 +23,7 @@ layout_mode = 2
 [node name="Button" type="Button" parent="AspectRatioContainer/VBoxContainer"]
 custom_minimum_size = Vector2(100, 10)
 layout_mode = 2
+theme_override_fonts/font = ExtResource("1_rrxvj")
 text = "Play"
 icon_alignment = 1
 
