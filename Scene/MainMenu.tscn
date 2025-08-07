@@ -1,5 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://cn6dfd3d2r5iv"]
+[gd_scene load_steps=3 format=3 uid="uid://cn6dfd3d2r5iv"]
 
+[ext_resource type="Script" uid="uid://35b2d4isksyw" path="res://COde/main_menu.gd" id="1_c6fb4"]
 [ext_resource type="FontFile" uid="uid://dpquv7mhmug8f" path="res://fonts/Press_Start_2P/PressStart2P-Regular.ttf" id="1_rrxvj"]
 
 [node name="MainMenu" type="Control"]
@@ -9,6 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_c6fb4")
 
 [node name="AspectRatioContainer" type="AspectRatioContainer" parent="."]
 layout_mode = 0
@@ -23,10 +25,20 @@ layout_mode = 2
 [node name="Button" type="Button" parent="AspectRatioContainer/VBoxContainer"]
 custom_minimum_size = Vector2(100, 10)
 layout_mode = 2
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 0, 1)
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 1, 0, 1)
 theme_override_fonts/font = ExtResource("1_rrxvj")
 text = "Play"
 icon_alignment = 1
 
 [node name="Button2" type="CheckButton" parent="AspectRatioContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_hover_color = Color(1, 1, 0, 1)
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 1, 0, 1)
+theme_override_fonts/font = ExtResource("1_rrxvj")
+button_pressed = true
 text = "Music"
+
+[connection signal="pressed" from="AspectRatioContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
