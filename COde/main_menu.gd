@@ -1,4 +1,4 @@
 extends Control
-var url1 = 'res://Scene/main.tscn'
+var url1 = 'res://Scene/Bangladesh.tscn'
 func _on_button_pressed() -> void:
-	pass # Replace with function body.
+	get_tree().change_scene_to_file(url1)
