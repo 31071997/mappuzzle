@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://cn6dfd3d2r5iv"]
+[gd_scene load_steps=4 format=3 uid="uid://cn6dfd3d2r5iv"]
 
 [ext_resource type="Script" uid="uid://35b2d4isksyw" path="res://COde/main_menu.gd" id="1_c6fb4"]
 [ext_resource type="FontFile" uid="uid://dpquv7mhmug8f" path="res://fonts/Press_Start_2P/PressStart2P-Regular.ttf" id="1_rrxvj"]
+[ext_resource type="AudioStream" uid="uid://sg4b63hgnros" path="res://Music/O Amar Desher Mati Instrumental _ No Copyright Bangla Song.mp3" id="3_6o0c3"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -29,7 +30,7 @@ theme_override_colors/font_hover_pressed_color = Color(1, 1, 0, 1)
 theme_override_colors/font_color = Color(1, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 1, 0, 1)
 theme_override_fonts/font = ExtResource("1_rrxvj")
-text = "Play"
+text = "New Game"
 icon_alignment = 1
 
 [node name="Button2" type="CheckButton" parent="AspectRatioContainer/VBoxContainer"]
@@ -41,4 +42,10 @@ theme_override_fonts/font = ExtResource("1_rrxvj")
 button_pressed = true
 text = "Music"
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_6o0c3")
+autoplay = true
+parameters/looping = false
+
 [connection signal="pressed" from="AspectRatioContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="toggled" from="AspectRatioContainer/VBoxContainer/Button2" to="." method="_on_button_2_toggled"]

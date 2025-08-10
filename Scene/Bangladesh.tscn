@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=3 uid="uid://beujavvdidgkb"]
+[gd_scene load_steps=49 format=3 uid="uid://beujavvdidgkb"]
 
 [ext_resource type="Script" uid="uid://d1h27g81ad85k" path="res://COde/Bangladesh.gd" id="1_5ovq5"]
 [ext_resource type="Texture2D" uid="uid://c4glq77cp1lov" path="res://Map/map_project_golden_sylhet.png" id="1_gt6bd"]
@@ -33,7 +33,6 @@
 [ext_resource type="Script" uid="uid://dh554m00xbjqg" path="res://COde/chittagong.gd" id="30_fxibx"]
 [ext_resource type="Texture2D" uid="uid://daelqgdclxvj0" path="res://Map/map_project_barisal.png" id="31_bxtjx"]
 [ext_resource type="Script" uid="uid://cnkjnnnathyyf" path="res://COde/Barishal.gd" id="32_al1l2"]
-[ext_resource type="AudioStream" uid="uid://sg4b63hgnros" path="res://Music/O Amar Desher Mati Instrumental _ No Copyright Bangla Song.mp3" id="33_4afrh"]
 [ext_resource type="Script" uid="uid://ke6rndu31sox" path="res://COde/popup_panel.gd" id="34_sabp2"]
 [ext_resource type="FontFile" uid="uid://dpquv7mhmug8f" path="res://fonts/Press_Start_2P/PressStart2P-Regular.ttf" id="35_en1sk"]
 [ext_resource type="FontFile" uid="uid://di7txd0iekdwm" path="res://fonts/Viga/Viga-Regular.ttf" id="36_dr8l4"]
@@ -388,10 +387,6 @@ metadata/_edit_use_anchors_ = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="MapProjectBarisal/Area2D"]
 position = Vector2(-1, 0)
 shape = SubResource("CircleShape2D_htxhm")
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("33_4afrh")
-autoplay = true
 
 [node name="PopupPanel" type="PopupPanel" parent="."]
 auto_translate_mode = 1

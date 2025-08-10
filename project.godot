@@ -15,6 +15,10 @@ run/main_scene="uid://cn6dfd3d2r5iv"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+MainMenu="*res://Scene/MainMenu.tscn"
+
 [input_devices]
 
 pointing/android/enable_long_press_as_right_click=true
