@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjffvuykhwdtg"]
+
+[ext_resource type="AudioStream" uid="uid://sg4b63hgnros" path="res://Music/O Amar Desher Mati Instrumental _ No Copyright Bangla Song.mp3" id="1_4besk"]
+[ext_resource type="Script" path="res://COde/audio_stream_player_2d.gd" id="2_4besk"]
+
+[node name="Audio" type="Node"]
+script = ExtResource("2_4besk")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1_4besk")
+autoplay = true
+parameters/looping = true

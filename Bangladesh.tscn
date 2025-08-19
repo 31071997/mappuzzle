@@ -1,0 +1,741 @@
+[gd_scene load_steps=49 format=3 uid="uid://o0jfs648db8d"]
+
+[ext_resource type="Script" path="res://COde/Bangladesh.gd" id="1_7hf05"]
+[ext_resource type="Texture2D" uid="uid://c4glq77cp1lov" path="res://Map/map_project_golden_sylhet.png" id="2_mt5rh"]
+[ext_resource type="Script" path="res://COde/SylhetPlace.gd" id="3_hnswj"]
+[ext_resource type="Texture2D" uid="uid://sisrqpewstry" path="res://Map/map_project_golden_rangpur.png" id="4_sikbt"]
+[ext_resource type="Script" path="res://COde/RangpurPlace.gd" id="5_gtvjk"]
+[ext_resource type="Texture2D" uid="uid://dcji8mdwc5f0t" path="res://Map/map_project_golden_mymensingh.png" id="6_f3f6b"]
+[ext_resource type="Script" path="res://COde/MymensinghPlace.gd" id="7_aq1lj"]
+[ext_resource type="Texture2D" uid="uid://ci7ej5h25sepl" path="res://Map/map_project_golden_khulna.png" id="8_ybmn4"]
+[ext_resource type="Script" path="res://COde/KhulnaPlace.gd" id="9_bwxxp"]
+[ext_resource type="Texture2D" uid="uid://beuarjfo4bpas" path="res://Map/map_project_golden_rajsahi.png" id="10_jri5r"]
+[ext_resource type="Script" path="res://COde/RajsahiPlace.gd" id="11_4vy0w"]
+[ext_resource type="Texture2D" uid="uid://d0ymyx2o4vqk8" path="res://Map/map_project_golden_dhaka.png" id="12_yakfb"]
+[ext_resource type="Script" path="res://COde/DhakaPLace.gd" id="13_dukcw"]
+[ext_resource type="Texture2D" uid="uid://donnfhnlhp7cj" path="res://Map/map_project_golden_chittagong.png" id="14_0bjfr"]
+[ext_resource type="Script" path="res://COde/ChittagongPLace.gd" id="15_tnvbc"]
+[ext_resource type="Texture2D" uid="uid://2xuj2ixhj44e" path="res://Map/map_project_golden_barisal.png" id="16_2icpo"]
+[ext_resource type="Script" path="res://COde/BarishalPlace.gd" id="17_sef0f"]
+[ext_resource type="Texture2D" uid="uid://bcipvpi22aqy5" path="res://Map/map_project_sylhet.png" id="18_ex6n8"]
+[ext_resource type="Script" path="res://COde/Sylhet.gd" id="19_07c6y"]
+[ext_resource type="Texture2D" uid="uid://cl2rsnvu56q3n" path="res://Map/map_project_rangpur.png" id="20_c1a71"]
+[ext_resource type="Script" path="res://COde/Rangpur.gd" id="21_5m26x"]
+[ext_resource type="Texture2D" uid="uid://q0keewvjdbrl" path="res://Map/map_project_mymensingh.png" id="22_c3itw"]
+[ext_resource type="Script" path="res://COde/Mymensingh.gd" id="23_toqea"]
+[ext_resource type="Texture2D" uid="uid://dk02uqy8jjei8" path="res://Map/map_project_khulna.png" id="24_qkupk"]
+[ext_resource type="Script" uid="uid://xfmy48fouug2" path="res://COde/Khulna.gd" id="25_gykqq"]
+[ext_resource type="Texture2D" uid="uid://0vf0teg3uhbn" path="res://Map/map_project_rajsahi.png" id="26_6ab2l"]
+[ext_resource type="Script" path="res://COde/Rajsahi.gd" id="27_mhtep"]
+[ext_resource type="Texture2D" uid="uid://dsd7qd0b4fcr7" path="res://Map/map_project_dhaka.png" id="28_ngtvc"]
+[ext_resource type="Script" path="res://COde/Dhaka.gd" id="29_cflqn"]
+[ext_resource type="Texture2D" uid="uid://b6bf5sllvqets" path="res://Map/map_project_chittagong.png" id="30_q0yte"]
+[ext_resource type="Script" path="res://COde/chittagong.gd" id="31_nqun8"]
+[ext_resource type="Texture2D" uid="uid://daelqgdclxvj0" path="res://Map/map_project_barisal.png" id="32_61p2v"]
+[ext_resource type="Script" path="res://COde/Barishal.gd" id="33_3hqfl"]
+[ext_resource type="Script" path="res://COde/popup_panel.gd" id="34_jl6b5"]
+[ext_resource type="FontFile" uid="uid://dpquv7mhmug8f" path="res://fonts/Press_Start_2P/PressStart2P-Regular.ttf" id="35_1o5vf"]
+[ext_resource type="FontFile" uid="uid://di7txd0iekdwm" path="res://fonts/Viga/Viga-Regular.ttf" id="36_yyo88"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_htxhm"]
+radius = 12.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jq2sk"]
+radius = 9.0
+height = 82.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4k2k6"]
+radius = 8.0
+height = 32.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0rl1p"]
+radius = 8.0
+height = 78.0
+
+[sub_resource type="Theme" id="Theme_4k2k6"]
+
+[sub_resource type="Theme" id="Theme_come4"]
+
+[sub_resource type="Theme" id="Theme_h8e4i"]
+
+[sub_resource type="Theme" id="Theme_0rl1p"]
+
+[sub_resource type="Theme" id="Theme_ok6jj"]
+
+[sub_resource type="Theme" id="Theme_jq2sk"]
+
+[sub_resource type="Theme" id="Theme_facbu"]
+
+[sub_resource type="Theme" id="Theme_b1qrp"]
+
+[node name="Map" type="Node2D"]
+script = ExtResource("1_7hf05")
+
+[node name="MapProjectSylhetPlace" type="Sprite2D" parent="."]
+position = Vector2(496, 390)
+texture = ExtResource("2_mt5rh")
+script = ExtResource("3_hnswj")
+
+[node name="Area2D" type="Area2D" parent="MapProjectSylhetPlace" groups=["SylhetPlace"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MapProjectSylhetPlace/Area2D"]
+position = Vector2(-1, 0)
+shape = SubResource("CircleShape2D_htxhm")
+
+[node name="MapProjectRangpurPlace" type="Sprite2D" parent="."]
+position = Vector2(379.5, 333)
+scale = Vector2(1, 0.97)
+texture = ExtResource("4_sikbt")
+script = ExtResource("5_gtvjk")
+
+[node name="Area2D" type="Area2D" parent="MapProjectRangpurPlace" groups=["RangpurPlace"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MapProjectRangpurPlace/Area2D"]
+position = Vector2(-1, 0)
+shape = SubResource("CircleShape2D_htxhm")
+
+[node name="MapProjectMymensinghPlace" type="Sprite2D" parent="."]
+position = Vector2(442, 378)
+texture = ExtResource("6_f3f6b")
+script = ExtResource("7_aq1lj")
+
+[node name="Area2D" type="Area2D" parent="MapProjectMymensinghPlace" groups=["MymensinghPlace"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MapProjectMymensinghPlace/Area2D"]
+position = Vector2(-1, 0)
+shape = SubResource("CircleShape2D_htxhm")
+
+[node name="MapProjectKhulnaPlace" type="Sprite2D" parent="."]
+position = Vector2(394, 468)
+texture = ExtResource("8_ybmn4")
+script = ExtResource("9_bwxxp")
+
+[node name="Area2D" type="Area2D" parent="MapProjectKhulnaPlace" groups=["KhulnaPlace"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MapProjectKhulnaPlace/Area2D"]
+position = Vector2(3, 0)
+shape = SubResource("CircleShape2D_htxhm")
+
+[node name="MapProjectRajsahiPlace" type="Sprite2D" parent="."]
+position = Vector2(377, 390)
+texture = ExtResource("10_jri5r")
+script = ExtResource("11_4vy0w")
+
+[node name="Area2D" type="Area2D" parent="MapProjectRajsahiPlace" groups=["RajsahiPlace"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MapProjectRajsahiPlace/Area2D"]
+position = Vector2(-1, 0)
+shape = SubResource("CircleShape2D_htxhm")
+
+[node name="MapProjectDhakaPlace" type="Sprite2D" parent="."]
+position = Vector2(436, 424)
+texture = ExtResource("12_yakfb")
+script = ExtResource("13_dukcw")
+
+[node name="Area2D" type="Area2D" parent="MapProjectDhakaPlace" groups=["DhakaPlace"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MapProjectDhakaPlace/Area2D"]
+position = Vector2(-1, 0)
+shape = SubResource("CircleShape2D_htxhm")
+
+[node name="MapProjectChittagongPlace" type="Sprite2D" parent="."]
+position = Vector2(490, 486)
+texture = ExtResource("14_0bjfr")
+script = ExtResource("15_tnvbc")
+
+[node name="Area2D" type="Area2D" parent="MapProjectChittagongPlace" groups=["ChittagongPlace"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MapProjectChittagongPlace/Area2D"]
+position = Vector2(-23, -30)
+shape = SubResource("CircleShape2D_htxhm")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="MapProjectChittagongPlace/Area2D"]
+position = Vector2(21, 2)
+shape = SubResource("CapsuleShape2D_jq2sk")
+
+[node name="MapProjectBarisalPlace" type="Sprite2D" parent="."]
+position = Vector2(441, 490)
+texture = ExtResource("16_2icpo")
+script = ExtResource("17_sef0f")
+
+[node name="Area2D" type="Area2D" parent="MapProjectBarisalPlace" groups=["BarishalPlace"]]
+position = Vector2(-4, -2)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MapProjectBarisalPlace/Area2D"]
+position = Vector2(-1, 0)
+shape = SubResource("CircleShape2D_htxhm")
+
+[node name="MapProjectSylhet" type="Sprite2D" parent="."]
+position = Vector2(58, 97)
+texture = ExtResource("18_ex6n8")
+script = ExtResource("19_07c6y")
+
+[node name="Button" type="Button" parent="MapProjectSylhet"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = -0.0163399
+anchor_right = 0.00980392
+offset_left = -24.0
+offset_top = -32.0
+offset_right = 24.0
+offset_bottom = 32.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="MapProjectSylhet" groups=["Sylhet"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MapProjectSylhet/Area2D"]
+position = Vector2(-1, 0)
+shape = SubResource("CircleShape2D_htxhm")
+
+[node name="MapProjectRangpur" type="Sprite2D" parent="."]
+position = Vector2(201, 97)
+texture = ExtResource("20_c1a71")
+script = ExtResource("21_5m26x")
+
+[node name="Button" type="Button" parent="MapProjectRangpur"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = -0.0277778
+anchor_right = 0.0114379
+offset_left = -24.0
+offset_top = -32.0
+offset_right = 24.0
+offset_bottom = 32.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="MapProjectRangpur" groups=["Rangpur"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MapProjectRangpur/Area2D"]
+position = Vector2(-1, 0)
+shape = SubResource("CircleShape2D_htxhm")
+
+[node name="MapProjectMymensingh" type="Sprite2D" parent="."]
+position = Vector2(427, 97)
+texture = ExtResource("22_c3itw")
+script = ExtResource("23_toqea")
+
+[node name="Button" type="Button" parent="MapProjectMymensingh"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = -0.00980392
+anchor_top = -0.0113636
+anchor_right = 0.00816994
+anchor_bottom = -0.0113636
+offset_left = -24.0
+offset_top = -32.0
+offset_right = 24.0
+offset_bottom = 32.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="MapProjectMymensingh" groups=["Mymensingh"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MapProjectMymensingh/Area2D"]
+position = Vector2(-1, 0)
+shape = SubResource("CircleShape2D_htxhm")
+
+[node name="MapProjectKhulna" type="Sprite2D" parent="."]
+position = Vector2(515, 97)
+texture = ExtResource("24_qkupk")
+script = ExtResource("25_gykqq")
+
+[node name="Button" type="Button" parent="MapProjectKhulna"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_top = -0.0315657
+anchor_bottom = 0.0189394
+offset_left = -24.0
+offset_top = -32.0
+offset_right = 24.0
+offset_bottom = 32.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="MapProjectKhulna" groups=["Khulna"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MapProjectKhulna/Area2D"]
+position = Vector2(-1, 0)
+shape = SubResource("CircleShape2D_htxhm")
+
+[node name="MapProjectRajsahi" type="Sprite2D" parent="."]
+position = Vector2(310, 100)
+texture = ExtResource("26_6ab2l")
+script = ExtResource("27_mhtep")
+
+[node name="Button" type="Button" parent="MapProjectRajsahi" groups=["Rajsahi"]]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = -0.0228758
+anchor_right = 0.0163399
+offset_left = -24.0
+offset_top = -32.0
+offset_right = 24.0
+offset_bottom = 32.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="MapProjectRajsahi" groups=["Rajsahi"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MapProjectRajsahi/Area2D"]
+position = Vector2(-1, 0)
+shape = SubResource("CircleShape2D_htxhm")
+
+[node name="MapProjectDhaka" type="Sprite2D" parent="."]
+position = Vector2(626, 97)
+texture = ExtResource("28_ngtvc")
+script = ExtResource("29_cflqn")
+
+[node name="Button" type="Button" parent="MapProjectDhaka"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = -0.0163399
+anchor_top = -0.0113636
+anchor_right = 0.0228758
+anchor_bottom = 0.0176768
+offset_left = -24.0
+offset_top = -32.0
+offset_right = 24.0
+offset_bottom = 32.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="MapProjectDhaka" groups=["Dhaka"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MapProjectDhaka/Area2D"]
+position = Vector2(-1, 0)
+shape = SubResource("CircleShape2D_htxhm")
+
+[node name="MapProjectChittagong" type="Sprite2D" parent="."]
+position = Vector2(737, 97)
+texture = ExtResource("30_q0yte")
+script = ExtResource("31_nqun8")
+
+[node name="Button" type="Button" parent="MapProjectChittagong"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = 0.0424837
+anchor_right = 0.0424837
+anchor_bottom = 0.0808081
+offset_left = -35.0
+offset_top = -65.0
+offset_right = 13.0
+offset_bottom = -1.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="MapProjectChittagong" groups=["Chittagong"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MapProjectChittagong/Area2D"]
+position = Vector2(-25, -33)
+shape = SubResource("CapsuleShape2D_4k2k6")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="MapProjectChittagong/Area2D"]
+position = Vector2(20, 0)
+shape = SubResource("CapsuleShape2D_0rl1p")
+
+[node name="Button2" type="Button" parent="MapProjectChittagong"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = 0.0163399
+anchor_top = 0.050505
+anchor_right = 0.0163399
+anchor_bottom = 0.0808081
+offset_left = -67.0
+offset_top = -113.0
+offset_right = -19.0
+offset_bottom = -49.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Button3" type="Button" parent="MapProjectChittagong"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = -0.0130719
+anchor_top = -0.00757576
+anchor_right = -0.0130719
+anchor_bottom = -0.00757576
+offset_left = -35.0
+offset_top = -65.0
+offset_right = 13.0
+offset_bottom = -1.0
+metadata/_edit_use_anchors_ = true
+
+[node name="MapProjectBarisal" type="Sprite2D" parent="."]
+position = Vector2(846, 97)
+texture = ExtResource("32_61p2v")
+script = ExtResource("33_3hqfl")
+
+[node name="Button" type="Button" parent="MapProjectBarisal"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = -0.00447053
+anchor_top = -0.0572929
+anchor_right = -0.00447053
+anchor_bottom = -0.0572929
+offset_left = -27.0
+offset_top = -33.0
+offset_right = 28.736
+offset_bottom = 76.376
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="MapProjectBarisal" groups=["Barishal", "BarishalPlace"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MapProjectBarisal/Area2D"]
+position = Vector2(-1, 0)
+shape = SubResource("CircleShape2D_htxhm")
+
+[node name="PopupPanel" type="PopupPanel" parent="."]
+auto_translate_mode = 1
+initial_position = 2
+size = Vector2i(1152, 647)
+script = ExtResource("34_jl6b5")
+
+[node name="LabelBarishal" type="Label" parent="PopupPanel"]
+visible = false
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 1148.0
+offset_bottom = 643.0
+theme = SubResource("Theme_4k2k6")
+theme_type_variation = &"HeaderLarge"
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("35_1o5vf")
+autowrap_mode = 3
+
+[node name="ScrollBarishal" type="ScrollContainer" parent="PopupPanel/LabelBarishal"]
+layout_mode = 0
+offset_left = 144.0
+offset_top = 61.0
+offset_right = 1288.0
+offset_bottom = 572.0
+scale = Vector2(0.75, 1)
+theme = SubResource("Theme_come4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PopupPanel/LabelBarishal/ScrollBarishal"]
+custom_minimum_size = Vector2(1100, 514)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PopupPanel/LabelBarishal/ScrollBarishal/VBoxContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme = SubResource("Theme_h8e4i")
+theme_override_fonts/font = ExtResource("36_yyo88")
+theme_override_font_sizes/font_size = 25
+autowrap_mode = 3
+structured_text_bidi_override = 4
+
+[node name="LabelChittagong" type="Label" parent="PopupPanel"]
+visible = false
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 1148.0
+offset_bottom = 643.0
+theme = SubResource("Theme_0rl1p")
+theme_type_variation = &"HeaderLarge"
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("35_1o5vf")
+
+[node name="ScrollBaChittagong" type="ScrollContainer" parent="PopupPanel/LabelChittagong"]
+layout_mode = 0
+offset_left = 144.0
+offset_top = 61.0
+offset_right = 1288.0
+offset_bottom = 572.0
+scale = Vector2(0.75, 1)
+theme = SubResource("Theme_come4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PopupPanel/LabelChittagong/ScrollBaChittagong"]
+custom_minimum_size = Vector2(1100, 514)
+layout_mode = 2
+
+[node name="LabelChattogram" type="Label" parent="PopupPanel/LabelChittagong/ScrollBaChittagong/VBoxContainer"]
+custom_minimum_size = Vector2(100, 500)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme = SubResource("Theme_h8e4i")
+theme_override_fonts/font = ExtResource("36_yyo88")
+theme_override_font_sizes/font_size = 25
+autowrap_mode = 3
+structured_text_bidi_override = 4
+
+[node name="LabelKhulna" type="Label" parent="PopupPanel"]
+visible = false
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 1148.0
+offset_bottom = 643.0
+theme = SubResource("Theme_ok6jj")
+theme_type_variation = &"HeaderLarge"
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("35_1o5vf")
+
+[node name="ScrollKhulna" type="ScrollContainer" parent="PopupPanel/LabelKhulna"]
+layout_mode = 0
+offset_left = 144.0
+offset_top = 61.0
+offset_right = 1288.0
+offset_bottom = 572.0
+scale = Vector2(0.75, 1)
+theme = SubResource("Theme_come4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PopupPanel/LabelKhulna/ScrollKhulna"]
+custom_minimum_size = Vector2(1100, 514)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PopupPanel/LabelKhulna/ScrollKhulna/VBoxContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme = SubResource("Theme_h8e4i")
+theme_override_fonts/font = ExtResource("36_yyo88")
+theme_override_font_sizes/font_size = 25
+text = "1. Barishal is the Venice of the east"
+autowrap_mode = 3
+structured_text_bidi_override = 4
+
+[node name="LabelDhaka" type="Label" parent="PopupPanel"]
+visible = false
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 1148.0
+offset_bottom = 643.0
+theme = SubResource("Theme_jq2sk")
+theme_type_variation = &"HeaderLarge"
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("35_1o5vf")
+text = "[Dynamic]"
+autowrap_mode = 3
+
+[node name="ScrollDhaka" type="ScrollContainer" parent="PopupPanel/LabelDhaka"]
+layout_mode = 0
+offset_left = 144.0
+offset_top = 61.0
+offset_right = 1288.0
+offset_bottom = 572.0
+scale = Vector2(0.75, 1)
+theme = SubResource("Theme_come4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PopupPanel/LabelDhaka/ScrollDhaka"]
+custom_minimum_size = Vector2(1100, 514)
+layout_mode = 2
+
+[node name="Labeldescribe" type="Label" parent="PopupPanel/LabelDhaka/ScrollDhaka/VBoxContainer"]
+custom_minimum_size = Vector2(100, 500)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme = SubResource("Theme_h8e4i")
+theme_override_fonts/font = ExtResource("36_yyo88")
+theme_override_font_sizes/font_size = 25
+autowrap_mode = 3
+structured_text_bidi_override = 4
+
+[node name="LabelMymensingh" type="Label" parent="PopupPanel"]
+visible = false
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 1148.0
+offset_bottom = 643.0
+theme = SubResource("Theme_jq2sk")
+theme_type_variation = &"HeaderLarge"
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("35_1o5vf")
+text = "[Dynamic]"
+autowrap_mode = 3
+
+[node name="ScrollMymensingh" type="ScrollContainer" parent="PopupPanel/LabelMymensingh"]
+layout_mode = 0
+offset_left = 144.0
+offset_top = 61.0
+offset_right = 1288.0
+offset_bottom = 572.0
+scale = Vector2(0.75, 1)
+theme = SubResource("Theme_come4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PopupPanel/LabelMymensingh/ScrollMymensingh"]
+custom_minimum_size = Vector2(1100, 514)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PopupPanel/LabelMymensingh/ScrollMymensingh/VBoxContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme = SubResource("Theme_h8e4i")
+theme_override_fonts/font = ExtResource("36_yyo88")
+theme_override_font_sizes/font_size = 25
+autowrap_mode = 3
+structured_text_bidi_override = 4
+
+[node name="LabelRajsahi" type="Label" parent="PopupPanel"]
+visible = false
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 1148.0
+offset_bottom = 643.0
+theme = SubResource("Theme_facbu")
+theme_type_variation = &"HeaderLarge"
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("35_1o5vf")
+
+[node name="ScrollRajsahi" type="ScrollContainer" parent="PopupPanel/LabelRajsahi"]
+layout_mode = 0
+offset_left = 144.0
+offset_top = 61.0
+offset_right = 1288.0
+offset_bottom = 572.0
+scale = Vector2(0.75, 1)
+theme = SubResource("Theme_come4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PopupPanel/LabelRajsahi/ScrollRajsahi"]
+custom_minimum_size = Vector2(1100, 514)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PopupPanel/LabelRajsahi/ScrollRajsahi/VBoxContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme = SubResource("Theme_h8e4i")
+theme_override_fonts/font = ExtResource("36_yyo88")
+theme_override_font_sizes/font_size = 25
+text = "1. Barishal is the Venice of the east"
+autowrap_mode = 3
+structured_text_bidi_override = 4
+
+[node name="LabelRangpur" type="Label" parent="PopupPanel"]
+visible = false
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 1148.0
+offset_bottom = 643.0
+theme = SubResource("Theme_jq2sk")
+theme_type_variation = &"HeaderLarge"
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("35_1o5vf")
+text = "[Dynamic]"
+autowrap_mode = 3
+
+[node name="ScrollRangpur" type="ScrollContainer" parent="PopupPanel/LabelRangpur"]
+layout_mode = 0
+offset_left = 144.0
+offset_top = 61.0
+offset_right = 1288.0
+offset_bottom = 572.0
+scale = Vector2(0.75, 1)
+theme = SubResource("Theme_come4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PopupPanel/LabelRangpur/ScrollRangpur"]
+custom_minimum_size = Vector2(1100, 514)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PopupPanel/LabelRangpur/ScrollRangpur/VBoxContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme = SubResource("Theme_h8e4i")
+theme_override_fonts/font = ExtResource("36_yyo88")
+theme_override_font_sizes/font_size = 25
+text = "1. Barishal is the Venice of the east"
+autowrap_mode = 3
+structured_text_bidi_override = 4
+
+[node name="LabelSylhet" type="Label" parent="PopupPanel"]
+visible = false
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 1148.0
+offset_bottom = 643.0
+theme = SubResource("Theme_b1qrp")
+theme_type_variation = &"HeaderLarge"
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("35_1o5vf")
+
+[node name="ScrollSylhet" type="ScrollContainer" parent="PopupPanel/LabelSylhet"]
+layout_mode = 0
+offset_left = 144.0
+offset_top = 61.0
+offset_right = 1288.0
+offset_bottom = 572.0
+scale = Vector2(0.75, 1)
+theme = SubResource("Theme_come4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PopupPanel/LabelSylhet/ScrollSylhet"]
+custom_minimum_size = Vector2(1100, 514)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PopupPanel/LabelSylhet/ScrollSylhet/VBoxContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme = SubResource("Theme_h8e4i")
+theme_override_fonts/font = ExtResource("36_yyo88")
+theme_override_font_sizes/font_size = 25
+autowrap_mode = 3
+structured_text_bidi_override = 4
+
+[node name="Button" type="Button" parent="PopupPanel"]
+top_level = true
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -88.5
+offset_top = -59.0
+offset_right = -16.5
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_vertical = 8
+theme_override_colors/font_disabled_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0.2, 0, 1)
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("35_1o5vf")
+action_mode = 0
+text = "Exit"
+flat = true
+icon_alignment = 1
+vertical_icon_alignment = 2
+
+[connection signal="area_entered" from="MapProjectSylhetPlace/Area2D" to="MapProjectSylhetPlace" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="MapProjectRangpurPlace/Area2D" to="MapProjectRangpurPlace" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="MapProjectMymensinghPlace/Area2D" to="MapProjectMymensinghPlace" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="MapProjectKhulnaPlace/Area2D" to="MapProjectKhulnaPlace" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="MapProjectRajsahiPlace/Area2D" to="MapProjectRajsahiPlace" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="MapProjectDhakaPlace/Area2D" to="MapProjectDhakaPlace" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="MapProjectChittagongPlace/Area2D" to="MapProjectChittagongPlace" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="MapProjectBarisalPlace/Area2D" to="MapProjectBarisalPlace" method="_on_area_2d_area_entered"]
+[connection signal="button_down" from="MapProjectSylhet/Button" to="MapProjectSylhet" method="_on_button_button_down"]
+[connection signal="button_up" from="MapProjectSylhet/Button" to="MapProjectSylhet" method="_on_button_button_up"]
+[connection signal="area_entered" from="MapProjectSylhet/Area2D" to="MapProjectSylhet" method="_on_area_2d_area_entered"]
+[connection signal="button_down" from="MapProjectRangpur/Button" to="MapProjectRangpur" method="_on_button_button_down"]
+[connection signal="button_up" from="MapProjectRangpur/Button" to="MapProjectRangpur" method="_on_button_button_up"]
+[connection signal="area_entered" from="MapProjectRangpur/Area2D" to="MapProjectRangpur" method="_on_area_2d_area_entered"]
+[connection signal="button_down" from="MapProjectMymensingh/Button" to="MapProjectMymensingh" method="_on_button_button_down"]
+[connection signal="button_up" from="MapProjectMymensingh/Button" to="MapProjectMymensingh" method="_on_button_button_up"]
+[connection signal="area_entered" from="MapProjectMymensingh/Area2D" to="MapProjectMymensingh" method="_on_area_2d_area_entered"]
+[connection signal="button_down" from="MapProjectKhulna/Button" to="MapProjectKhulna" method="_on_button_button_down"]
+[connection signal="button_up" from="MapProjectKhulna/Button" to="MapProjectKhulna" method="_on_button_button_up"]
+[connection signal="area_entered" from="MapProjectKhulna/Area2D" to="MapProjectKhulna" method="_on_area_2d_area_entered"]
+[connection signal="button_down" from="MapProjectRajsahi/Button" to="MapProjectRajsahi" method="_on_button_button_down"]
+[connection signal="button_up" from="MapProjectRajsahi/Button" to="MapProjectRajsahi" method="_on_button_button_up"]
+[connection signal="area_entered" from="MapProjectRajsahi/Area2D" to="MapProjectRajsahi" method="_on_area_2d_area_entered"]
+[connection signal="button_down" from="MapProjectDhaka/Button" to="MapProjectDhaka" method="_on_button_button_down"]
+[connection signal="button_up" from="MapProjectDhaka/Button" to="MapProjectDhaka" method="_on_button_button_up"]
+[connection signal="area_entered" from="MapProjectDhaka/Area2D" to="MapProjectDhaka" method="_on_area_2d_area_entered"]
+[connection signal="button_down" from="MapProjectChittagong/Button" to="MapProjectChittagong" method="_on_button_button_down"]
+[connection signal="button_up" from="MapProjectChittagong/Button" to="MapProjectChittagong" method="_on_button_button_up"]
+[connection signal="area_entered" from="MapProjectChittagong/Area2D" to="MapProjectChittagong" method="_on_area_2d_area_entered"]
+[connection signal="button_down" from="MapProjectChittagong/Button2" to="MapProjectChittagong" method="_on_button_button_down"]
+[connection signal="button_up" from="MapProjectChittagong/Button2" to="MapProjectChittagong" method="_on_button_button_up"]
+[connection signal="button_down" from="MapProjectChittagong/Button3" to="MapProjectChittagong" method="_on_button_button_down"]
+[connection signal="button_up" from="MapProjectChittagong/Button3" to="MapProjectChittagong" method="_on_button_button_up"]
+[connection signal="button_down" from="MapProjectBarisal/Button" to="MapProjectBarisal" method="_on_button_button_down"]
+[connection signal="button_up" from="MapProjectBarisal/Button" to="MapProjectBarisal" method="_on_button_button_up"]
+[connection signal="area_entered" from="MapProjectBarisal/Area2D" to="MapProjectBarisal" method="_on_area_2d_area_entered"]
+[connection signal="pressed" from="PopupPanel/Button" to="PopupPanel" method="_on_button_pressed"]
