@@ -15,9 +15,17 @@ run/main_scene="uid://cn6dfd3d2r5iv"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[audio]
+
+buses/default_bus_layout=""
+
 [autoload]
 
-AudioStreamPlayer2d="*res://COde/Audio_stream_player_2d.gd"
+MainMenu="*res://Scene/MainMenu.tscn"
+
+[global_group]
+
+BGM=""
 
 [input_devices]
 
