@@ -14,7 +14,8 @@ func playBGM():
 func _ready() -> void:
 	audio_stream_player_2d.play()
 func _on_check_button_toggled(toggled_on: bool) -> void:
-	if toggled_on:
+	count += 1
+	if(count%2 == 1):
 		pauseBGM()
 	else:
 		playBGM() 
