@@ -1,4 +1,4 @@
-[gd_scene load_steps=49 format=3 uid="uid://delnf6qrxah6"]
+[gd_scene load_steps=49 format=3 uid="uid://bdgbo0te41udn"]
 
 [ext_resource type="Script" uid="uid://d1h27g81ad85k" path="res://COde/Bangladesh.gd" id="1_7hf05"]
 [ext_resource type="Texture2D" uid="uid://c4glq77cp1lov" path="res://Map/map_project_golden_sylhet.png" id="2_mt5rh"]
