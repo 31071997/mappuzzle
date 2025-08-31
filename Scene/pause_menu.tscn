@@ -1,12 +1,32 @@
-[gd_scene format=3 uid="uid://cvgnigtk1ahlp"]
+[gd_scene load_steps=4 format=3 uid="uid://cvgnigtk1ahlp"]
+
+[ext_resource type="Texture2D" uid="uid://ge3x3hf45fpm" path="res://icon/letter-x (1).png" id="1_52pyj"]
+[ext_resource type="Texture2D" uid="uid://dpscmnwfouhtv" path="res://icon/cross-small (1).png" id="2_8dofg"]
+[ext_resource type="Texture2D" uid="uid://dyc5ahfr1pkg2" path="res://icon/cross-small (2).png" id="3_msjnk"]
 
 [node name="PauseMenu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -480.0
+offset_top = 616.0
+offset_right = -480.0
+offset_bottom = 616.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 1304.0
+offset_top = -808.0
+offset_right = 1816.0
+offset_bottom = -296.0
+scale = Vector2(0.125, 0.125)
+pivot_offset = Vector2(264, 256)
+texture_normal = ExtResource("1_52pyj")
+texture_pressed = ExtResource("2_8dofg")
+texture_hover = ExtResource("3_msjnk")
 
 [node name="MenuButton" type="MenuButton" parent="."]
 process_mode = 3
