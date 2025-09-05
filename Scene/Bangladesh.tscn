@@ -1,4 +1,4 @@
-[gd_scene load_steps=49 format=3 uid="uid://bsux4nf8n68xc"]
+[gd_scene load_steps=48 format=3 uid="uid://bsux4nf8n68xc"]
 
 [ext_resource type="Script" uid="uid://d1h27g81ad85k" path="res://COde/Bangladesh.gd" id="1_5ovq5"]
 [ext_resource type="Texture2D" uid="uid://c4glq77cp1lov" path="res://Map/map_project_golden_sylhet.png" id="1_gt6bd"]
@@ -52,13 +52,11 @@ height = 32.0
 radius = 8.0
 height = 78.0
 
-[sub_resource type="Theme" id="Theme_4k2k6"]
+[sub_resource type="Theme" id="Theme_0rl1p"]
 
 [sub_resource type="Theme" id="Theme_come4"]
 
 [sub_resource type="Theme" id="Theme_h8e4i"]
-
-[sub_resource type="Theme" id="Theme_0rl1p"]
 
 [sub_resource type="Theme" id="Theme_ok6jj"]
 
@@ -72,7 +70,7 @@ height = 78.0
 script = ExtResource("1_5ovq5")
 
 [node name="MapProjectSylhetPlace" type="Sprite2D" parent="."]
-position = Vector2(496, 390)
+position = Vector2(496, 160)
 texture = ExtResource("1_gt6bd")
 script = ExtResource("2_5ovq5")
 
@@ -83,7 +81,7 @@ position = Vector2(-1, 0)
 shape = SubResource("CircleShape2D_htxhm")
 
 [node name="MapProjectRangpurPlace" type="Sprite2D" parent="."]
-position = Vector2(379.5, 333)
+position = Vector2(379.5, 103)
 scale = Vector2(1, 0.97)
 texture = ExtResource("3_xcdl5")
 script = ExtResource("4_tlb1r")
@@ -95,7 +93,7 @@ position = Vector2(-1, 0)
 shape = SubResource("CircleShape2D_htxhm")
 
 [node name="MapProjectMymensinghPlace" type="Sprite2D" parent="."]
-position = Vector2(442, 378)
+position = Vector2(442, 148)
 texture = ExtResource("5_go0p3")
 script = ExtResource("6_g8ceq")
 
@@ -106,7 +104,7 @@ position = Vector2(-1, 0)
 shape = SubResource("CircleShape2D_htxhm")
 
 [node name="MapProjectKhulnaPlace" type="Sprite2D" parent="."]
-position = Vector2(394, 468)
+position = Vector2(394, 238)
 texture = ExtResource("7_blq4t")
 script = ExtResource("8_fj0tw")
 
@@ -117,7 +115,7 @@ position = Vector2(3, 0)
 shape = SubResource("CircleShape2D_htxhm")
 
 [node name="MapProjectRajsahiPlace" type="Sprite2D" parent="."]
-position = Vector2(377, 390)
+position = Vector2(377, 160)
 texture = ExtResource("9_e1g0b")
 script = ExtResource("10_bjirl")
 
@@ -128,7 +126,7 @@ position = Vector2(-1, 0)
 shape = SubResource("CircleShape2D_htxhm")
 
 [node name="MapProjectDhakaPlace" type="Sprite2D" parent="."]
-position = Vector2(436, 424)
+position = Vector2(436, 194)
 texture = ExtResource("11_bom8g")
 script = ExtResource("12_cr7yf")
 
@@ -139,7 +137,7 @@ position = Vector2(-1, 0)
 shape = SubResource("CircleShape2D_htxhm")
 
 [node name="MapProjectChittagongPlace" type="Sprite2D" parent="."]
-position = Vector2(490, 486)
+position = Vector2(490, 256)
 texture = ExtResource("13_jhov2")
 script = ExtResource("14_xrxxe")
 
@@ -154,7 +152,7 @@ position = Vector2(21, 2)
 shape = SubResource("CapsuleShape2D_jq2sk")
 
 [node name="MapProjectBarisalPlace" type="Sprite2D" parent="."]
-position = Vector2(441, 490)
+position = Vector2(441, 260)
 texture = ExtResource("15_ljija")
 script = ExtResource("16_vfd0n")
 
@@ -166,7 +164,7 @@ position = Vector2(-1, 0)
 shape = SubResource("CircleShape2D_htxhm")
 
 [node name="MapProjectSylhet" type="Sprite2D" parent="."]
-position = Vector2(58, 97)
+position = Vector2(153, 503)
 texture = ExtResource("17_3rh3h")
 script = ExtResource("18_7i1bl")
 
@@ -189,7 +187,7 @@ position = Vector2(-1, 0)
 shape = SubResource("CircleShape2D_htxhm")
 
 [node name="MapProjectRangpur" type="Sprite2D" parent="."]
-position = Vector2(201, 97)
+position = Vector2(296, 503)
 texture = ExtResource("19_jlfkp")
 script = ExtResource("20_vjukd")
 
@@ -212,7 +210,7 @@ position = Vector2(-1, 0)
 shape = SubResource("CircleShape2D_htxhm")
 
 [node name="MapProjectMymensingh" type="Sprite2D" parent="."]
-position = Vector2(427, 97)
+position = Vector2(522, 503)
 texture = ExtResource("21_u2hqh")
 script = ExtResource("22_nqjjg")
 
@@ -237,7 +235,7 @@ position = Vector2(-1, 0)
 shape = SubResource("CircleShape2D_htxhm")
 
 [node name="MapProjectKhulna" type="Sprite2D" parent="."]
-position = Vector2(515, 97)
+position = Vector2(610, 503)
 texture = ExtResource("23_hhdmm")
 script = ExtResource("24_6piot")
 
@@ -260,7 +258,7 @@ position = Vector2(-1, 0)
 shape = SubResource("CircleShape2D_htxhm")
 
 [node name="MapProjectRajsahi" type="Sprite2D" parent="."]
-position = Vector2(310, 100)
+position = Vector2(405, 506)
 texture = ExtResource("25_bj6ec")
 script = ExtResource("26_e3aih")
 
@@ -283,7 +281,7 @@ position = Vector2(-1, 0)
 shape = SubResource("CircleShape2D_htxhm")
 
 [node name="MapProjectDhaka" type="Sprite2D" parent="."]
-position = Vector2(626, 97)
+position = Vector2(721, 503)
 texture = ExtResource("27_u3dv7")
 script = ExtResource("28_f21x0")
 
@@ -308,7 +306,7 @@ position = Vector2(-1, 0)
 shape = SubResource("CircleShape2D_htxhm")
 
 [node name="MapProjectChittagong" type="Sprite2D" parent="."]
-position = Vector2(737, 97)
+position = Vector2(832, 503)
 texture = ExtResource("29_hn33x")
 script = ExtResource("30_fxibx")
 
@@ -364,7 +362,7 @@ offset_bottom = -1.0
 metadata/_edit_use_anchors_ = true
 
 [node name="MapProjectBarisal" type="Sprite2D" parent="."]
-position = Vector2(846, 97)
+position = Vector2(941, 503)
 texture = ExtResource("31_bxtjx")
 script = ExtResource("32_al1l2")
 
@@ -393,42 +391,6 @@ auto_translate_mode = 1
 initial_position = 2
 size = Vector2i(1152, 647)
 script = ExtResource("34_sabp2")
-
-[node name="LabelBarishal" type="Label" parent="PopupPanel"]
-visible = false
-offset_left = 4.0
-offset_top = 4.0
-offset_right = 1148.0
-offset_bottom = 643.0
-theme = SubResource("Theme_4k2k6")
-theme_type_variation = &"HeaderLarge"
-theme_override_colors/font_color = Color(1, 0, 0, 1)
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("35_en1sk")
-autowrap_mode = 3
-
-[node name="ScrollBarishal" type="ScrollContainer" parent="PopupPanel/LabelBarishal"]
-layout_mode = 0
-offset_left = 144.0
-offset_top = 61.0
-offset_right = 1288.0
-offset_bottom = 572.0
-scale = Vector2(0.75, 1)
-theme = SubResource("Theme_come4")
-
-[node name="VBoxContainer" type="VBoxContainer" parent="PopupPanel/LabelBarishal/ScrollBarishal"]
-custom_minimum_size = Vector2(1100, 514)
-layout_mode = 2
-
-[node name="Label" type="Label" parent="PopupPanel/LabelBarishal/ScrollBarishal/VBoxContainer"]
-layout_mode = 2
-mouse_default_cursor_shape = 2
-theme = SubResource("Theme_h8e4i")
-theme_override_fonts/font = ExtResource("36_dr8l4")
-theme_override_font_sizes/font_size = 25
-autowrap_mode = 3
-structured_text_bidi_override = 4
 
 [node name="LabelChittagong" type="Label" parent="PopupPanel"]
 visible = false
@@ -527,6 +489,40 @@ custom_minimum_size = Vector2(1100, 514)
 layout_mode = 2
 
 [node name="Labeldescribe" type="Label" parent="PopupPanel/LabelDhaka/ScrollDhaka/VBoxContainer"]
+custom_minimum_size = Vector2(100, 500)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme = SubResource("Theme_h8e4i")
+theme_override_fonts/font = ExtResource("36_dr8l4")
+theme_override_font_sizes/font_size = 25
+autowrap_mode = 3
+structured_text_bidi_override = 4
+
+[node name="LabelBarishal" type="Label" parent="PopupPanel"]
+visible = false
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 1148.0
+offset_bottom = 643.0
+theme = SubResource("Theme_0rl1p")
+theme_type_variation = &"HeaderLarge"
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("35_en1sk")
+
+[node name="ScrollBarishal" type="ScrollContainer" parent="PopupPanel/LabelBarishal"]
+layout_mode = 0
+offset_left = 144.0
+offset_top = 61.0
+offset_right = 1288.0
+offset_bottom = 572.0
+scale = Vector2(0.75, 1)
+theme = SubResource("Theme_come4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PopupPanel/LabelBarishal/ScrollBarishal"]
+custom_minimum_size = Vector2(1100, 514)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PopupPanel/LabelBarishal/ScrollBarishal/VBoxContainer"]
 custom_minimum_size = Vector2(100, 500)
 layout_mode = 2
 mouse_default_cursor_shape = 2

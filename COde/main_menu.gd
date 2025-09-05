@@ -13,6 +13,7 @@ func playBGM():
 		player.stream_paused = false
 func _ready() -> void:
 	audio_stream_player_2d.play()
+	PauseMenu.hide()
 func _on_check_button_toggled(toggled_on: bool) -> void:
 	count += 1
 	if(count%2 == 1):

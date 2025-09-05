@@ -22,10 +22,7 @@ buses/default_bus_layout=""
 [autoload]
 
 MainMenu="*res://Scene/MainMenu.tscn"
-
-[global_group]
-
-BGM=""
+PauseMenu="*res://Scene/pause_menu.tscn"
 
 [input_devices]
 
