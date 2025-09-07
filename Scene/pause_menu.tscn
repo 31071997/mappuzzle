@@ -30,13 +30,12 @@ texture_normal = ExtResource("1_52pyj")
 texture_pressed = ExtResource("2_ur6gg")
 
 [node name="MenuButton" type="MenuButton" parent="."]
-visible = false
 layout_mode = 0
 offset_left = 904.0
 offset_top = -384.0
-offset_right = 1490.0
+offset_right = 1424.0
 offset_bottom = 136.0
-text = "Options"
+scale = Vector2(0.1, 0.1)
 icon = ExtResource("1_52pyj")
 switch_on_hover = true
 item_count = 4
