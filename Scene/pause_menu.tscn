@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://cvgnigtk1ahlp"]
+[gd_scene load_steps=3 format=3 uid="uid://cvgnigtk1ahlp"]
 
 [ext_resource type="Script" uid="uid://bjcy1b80q61i3" path="res://COde/pause_menu.gd" id="1_8dofg"]
 [ext_resource type="Texture2D" uid="uid://ge3x3hf45fpm" path="res://icon/letter-x (1).png" id="1_52pyj"]
-[ext_resource type="Texture2D" uid="uid://dxh2vo2n4kylt" path="res://icon/letter-x.png" id="2_ur6gg"]
 
 [node name="PauseMenu" type="Control"]
 process_mode = 3
@@ -18,23 +17,13 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_8dofg")
 
-[node name="TextureButton" type="TextureButton" parent="."]
-layout_mode = 0
-offset_left = 1304.0
-offset_top = -808.0
-offset_right = 1816.0
-offset_bottom = -296.0
-scale = Vector2(0.125, 0.125)
-pivot_offset = Vector2(264, 256)
-texture_normal = ExtResource("1_52pyj")
-texture_pressed = ExtResource("2_ur6gg")
-
 [node name="MenuButton" type="MenuButton" parent="."]
+process_mode = 3
 layout_mode = 0
-offset_left = 904.0
-offset_top = -384.0
-offset_right = 1424.0
-offset_bottom = 136.0
+offset_left = 1544.0
+offset_top = -576.0
+offset_right = 2064.0
+offset_bottom = -56.0
 scale = Vector2(0.1, 0.1)
 icon = ExtResource("1_52pyj")
 switch_on_hover = true
@@ -53,5 +42,7 @@ popup/item_2/disabled = true
 popup/item_2/separator = true
 popup/item_3/text = "Load"
 popup/item_3/id = 3
+popup/item_3/disabled = true
+popup/item_3/separator = true
 
-[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="MenuButton" to="." method="_on_menu_button_pressed"]
