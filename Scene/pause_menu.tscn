@@ -27,22 +27,5 @@ offset_bottom = -56.0
 scale = Vector2(0.1, 0.1)
 icon = ExtResource("1_52pyj")
 switch_on_hover = true
-item_count = 4
-popup/item_0/text = "Play"
-popup/item_0/id = 0
-popup/item_0/disabled = true
-popup/item_0/separator = true
-popup/item_1/text = "Quit"
-popup/item_1/id = 1
-popup/item_1/disabled = true
-popup/item_1/separator = true
-popup/item_2/text = "Restart"
-popup/item_2/id = 2
-popup/item_2/disabled = true
-popup/item_2/separator = true
-popup/item_3/text = "Load"
-popup/item_3/id = 3
-popup/item_3/disabled = true
-popup/item_3/separator = true
 
 [connection signal="pressed" from="MenuButton" to="." method="_on_menu_button_pressed"]
