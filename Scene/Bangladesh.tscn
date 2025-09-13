@@ -1,6 +1,6 @@
-[gd_scene load_steps=48 format=3 uid="uid://bsux4nf8n68xc"]
+[gd_scene load_steps=49 format=3 uid="uid://bsux4nf8n68xc"]
 
-[ext_resource type="Script" path="res://COde/Bangladesh.gd" id="1_5ovq5"]
+[ext_resource type="Script" uid="uid://d1h27g81ad85k" path="res://COde/Bangladesh.gd" id="1_5ovq5"]
 [ext_resource type="Texture2D" uid="uid://c4glq77cp1lov" path="res://Map/map_project_golden_sylhet.png" id="1_gt6bd"]
 [ext_resource type="Script" path="res://COde/SylhetPlace.gd" id="2_5ovq5"]
 [ext_resource type="Texture2D" uid="uid://sisrqpewstry" path="res://Map/map_project_golden_rangpur.png" id="3_xcdl5"]
@@ -22,7 +22,7 @@
 [ext_resource type="Texture2D" uid="uid://cl2rsnvu56q3n" path="res://Map/map_project_rangpur.png" id="19_jlfkp"]
 [ext_resource type="Script" path="res://COde/Rangpur.gd" id="20_vjukd"]
 [ext_resource type="Texture2D" uid="uid://q0keewvjdbrl" path="res://Map/map_project_mymensingh.png" id="21_u2hqh"]
-[ext_resource type="Script" path="res://COde/Mymensingh.gd" id="22_nqjjg"]
+[ext_resource type="Script" uid="uid://b73dktuxltpp3" path="res://COde/Mymensingh.gd" id="22_nqjjg"]
 [ext_resource type="Texture2D" uid="uid://dk02uqy8jjei8" path="res://Map/map_project_khulna.png" id="23_hhdmm"]
 [ext_resource type="Script" uid="uid://xfmy48fouug2" path="res://COde/Khulna.gd" id="24_6piot"]
 [ext_resource type="Texture2D" uid="uid://0vf0teg3uhbn" path="res://Map/map_project_rajsahi.png" id="25_bj6ec"]
@@ -66,6 +66,8 @@ height = 78.0
 
 [sub_resource type="Theme" id="Theme_b1qrp"]
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gt6bd"]
+
 [node name="Map" type="Node2D"]
 script = ExtResource("1_5ovq5")
 
@@ -73,6 +75,15 @@ script = ExtResource("1_5ovq5")
 position = Vector2(496, 160)
 texture = ExtResource("1_gt6bd")
 script = ExtResource("2_5ovq5")
+
+[node name="Button" type="Button" parent="MapProjectSylhetPlace"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -14.0
+offset_top = -18.0
+offset_right = -6.0
+offset_bottom = -10.0
+scale = Vector2(3, 3)
 
 [node name="Area2D" type="Area2D" parent="MapProjectSylhetPlace" groups=["SylhetPlace"]]
 
@@ -86,6 +97,15 @@ scale = Vector2(1, 0.97)
 texture = ExtResource("3_xcdl5")
 script = ExtResource("4_tlb1r")
 
+[node name="Button" type="Button" parent="MapProjectRangpurPlace"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -14.0
+offset_top = -10.0
+offset_right = -6.0
+offset_bottom = -2.0
+scale = Vector2(3, 3)
+
 [node name="Area2D" type="Area2D" parent="MapProjectRangpurPlace" groups=["RangpurPlace"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="MapProjectRangpurPlace/Area2D"]
@@ -96,6 +116,15 @@ shape = SubResource("CircleShape2D_htxhm")
 position = Vector2(442, 148)
 texture = ExtResource("5_go0p3")
 script = ExtResource("6_g8ceq")
+
+[node name="Button" type="Button" parent="MapProjectMymensinghPlace"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -26.0
+offset_top = -12.0
+offset_right = -18.0
+offset_bottom = -4.0
+scale = Vector2(5.84, 1.68)
 
 [node name="Area2D" type="Area2D" parent="MapProjectMymensinghPlace" groups=["MymensinghPlace"]]
 
@@ -703,6 +732,14 @@ offset_left = 44.0
 offset_top = 579.0
 offset_right = 92.0
 offset_bottom = 602.0
+theme_override_colors/font_color = Color(0.734477, 0.487121, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.261228, 0.17154, 4.81308e-08, 1)
+theme_override_colors/font_outline_color = Color(0.262745, 0.172549, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 10
+theme_override_fonts/font = ExtResource("35_en1sk")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxTexture_gt6bd")
 
 [connection signal="area_entered" from="MapProjectSylhetPlace/Area2D" to="MapProjectSylhetPlace" method="_on_area_2d_area_entered"]
 [connection signal="area_entered" from="MapProjectRangpurPlace/Area2D" to="MapProjectRangpurPlace" method="_on_area_2d_area_entered"]
