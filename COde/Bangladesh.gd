@@ -9,3 +9,7 @@ func _ready() -> void:
 	MainMenu.hide()
 	PauseMenu.show()
 	label.text += Score.score_label + str(Score.score)
+
+
+func _on_button_pressed() -> void:
+	pass # Replace with function body.

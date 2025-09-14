@@ -5,5 +5,5 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 	if area.is_in_group('Barishal'):
 		texture = change
 		Score.score += 1
-		label.text = Score.score_label + str(Score.score)  
-		
+		label.text = Score.score_label + str(Score.score)
+  

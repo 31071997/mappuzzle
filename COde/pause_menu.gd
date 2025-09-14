@@ -1,5 +1,4 @@
 extends Control
-@onready var texture_button: TextureButton = $TextureButton
 @onready var menu_button: MenuButton = $MenuButton
 
 func _ready() -> void:
@@ -16,5 +15,6 @@ func _on_menu_item_selected(id: int) -> void:
 			get_tree().quit()
 		2:
 			get_tree().reload_current_scene()
+			Score.score = 0
 func _on_menu_button_pressed() -> void:
 	get_tree().paused = true
