@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bavdn4snyqwfe"]
+
+[ext_resource type="Texture2D" uid="uid://bcipvpi22aqy5" path="res://Map/map_project_sylhet.png" id="1_ojw1y"]
+
+[node name="Sylhet" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(576, 322)
+scale = Vector2(5, 5)
+texture = ExtResource("1_ojw1y")
