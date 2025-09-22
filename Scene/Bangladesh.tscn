@@ -41,8 +41,8 @@
 radius = 7.36954
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jq2sk"]
-radius = 9.0
-height = 82.0
+radius = 18.0
+height = 80.6451
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4k2k6"]
 radius = 8.0
@@ -155,16 +155,26 @@ script = ExtResource("8_fj0tw")
 [node name="Button" type="Button" parent="MapProjectKhulnaPlace"]
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
-offset_left = -26.0
-offset_top = -12.0
-offset_right = -18.0
-offset_bottom = -4.0
-scale = Vector2(5.84, 1.68)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -306.0
+offset_top = -442.0
+offset_right = -298.0
+offset_bottom = -434.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 1.309
+scale = Vector2(10.2088, 2.61528)
 
 [node name="Area2D" type="Area2D" parent="MapProjectKhulnaPlace" groups=["KhulnaPlace"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="MapProjectKhulnaPlace/Area2D"]
 position = Vector2(3, 0)
+rotation = -0.261799
+scale = Vector2(1.87854, 6.85075)
 shape = SubResource("CircleShape2D_htxhm")
 
 [node name="Timer" type="Timer" parent="MapProjectKhulnaPlace"]
@@ -178,16 +188,24 @@ script = ExtResource("10_bjirl")
 [node name="Button" type="Button" parent="MapProjectRajsahiPlace"]
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
-offset_left = -26.0
-offset_top = -12.0
-offset_right = -18.0
-offset_bottom = -4.0
-scale = Vector2(5.84, 1.68)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -321.0
+offset_top = -422.0
+offset_right = -313.0
+offset_bottom = -414.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.174533
+scale = Vector2(5.84, 4.35801)
 
 [node name="Area2D" type="Area2D" parent="MapProjectRajsahiPlace" groups=["RajsahiPlace"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="MapProjectRajsahiPlace/Area2D"]
-position = Vector2(6.99997, -1)
+position = Vector2(7, -1.19209e-07)
 rotation = -0.785397
 scale = Vector2(2.2, 4.6)
 shape = SubResource("CircleShape2D_htxhm")
@@ -203,18 +221,26 @@ script = ExtResource("12_cr7yf")
 [node name="Button" type="Button" parent="MapProjectDhakaPlace"]
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
-offset_left = -26.0
-offset_top = -12.0
-offset_right = -18.0
-offset_bottom = -4.0
-scale = Vector2(5.84, 1.68)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -285.0
+offset_top = -404.0
+offset_right = -277.0
+offset_bottom = -396.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 2.09439
+scale = Vector2(5.42144, 4.55023)
 
 [node name="Area2D" type="Area2D" parent="MapProjectDhakaPlace" groups=["DhakaPlace"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="MapProjectDhakaPlace/Area2D"]
-position = Vector2(5, -13)
-rotation = 1.57079
-scale = Vector2(-0.83, -3.343)
+position = Vector2(-5, 2.5)
+rotation = 0.785397
+scale = Vector2(2.3, -4)
 shape = SubResource("CircleShape2D_htxhm")
 
 [node name="Timer" type="Timer" parent="MapProjectDhakaPlace"]
@@ -228,29 +254,41 @@ script = ExtResource("14_xrxxe")
 [node name="Button2" type="Button" parent="MapProjectChittagongPlace"]
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
-offset_left = -231.84
-offset_top = -94.16
-offset_right = -223.84
-offset_bottom = -86.16
-scale = Vector2(5.84, 1.68)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -284.0
+offset_top = -429.0
+offset_right = -276.0
+offset_bottom = -421.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 1.309
+scale = Vector2(8.99801, 2.90711)
 
 [node name="Button" type="Button" parent="MapProjectChittagongPlace"]
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
-offset_left = -80.0
-offset_top = -74.0
-offset_right = -72.0
-offset_bottom = -66.0
-scale = Vector2(5.84, 1.68)
+offset_left = -17.0
+offset_top = -51.0
+offset_right = -9.0
+offset_bottom = -38.0
+rotation = 1.309
+scale = Vector2(4, 1.79)
 
 [node name="Area2D" type="Area2D" parent="MapProjectChittagongPlace" groups=["ChittagongPlace"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="MapProjectChittagongPlace/Area2D"]
-position = Vector2(-23, -30)
+position = Vector2(-25, -32)
+rotation = -0.523598
+scale = Vector2(1.793, 2.5)
 shape = SubResource("CircleShape2D_htxhm")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="MapProjectChittagongPlace/Area2D"]
-position = Vector2(21, 2)
+position = Vector2(21, -2)
+scale = Vector2(0.5, 1.24)
 shape = SubResource("CapsuleShape2D_jq2sk")
 
 [node name="Timer" type="Timer" parent="MapProjectChittagongPlace"]
@@ -264,17 +302,25 @@ script = ExtResource("16_vfd0n")
 [node name="Button" type="Button" parent="MapProjectBarisalPlace"]
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
-offset_left = -26.0
-offset_top = -12.0
-offset_right = -18.0
-offset_bottom = -4.0
-scale = Vector2(5.84, 1.68)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -324.0
+offset_top = -417.0
+offset_right = -316.0
+offset_bottom = -409.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(4.04, 5.72001)
 
 [node name="Area2D" type="Area2D" parent="MapProjectBarisalPlace" groups=["BarishalPlace"]]
 position = Vector2(-4, -2)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="MapProjectBarisalPlace/Area2D"]
-position = Vector2(-1, 0)
+position = Vector2(3, 0)
+scale = Vector2(2.4, -3.5)
 shape = SubResource("CircleShape2D_htxhm")
 
 [node name="Timer" type="Timer" parent="MapProjectBarisalPlace"]
