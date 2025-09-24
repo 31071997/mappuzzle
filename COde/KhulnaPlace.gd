@@ -19,4 +19,4 @@ func _on_timer_timeout() -> void:
 
 
 func _on_button_pressed() -> void:
-	pass # Replace with function body.
+	timepress += 1
