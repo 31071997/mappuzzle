@@ -21,7 +21,7 @@ func _on_button_pressed() -> void:
 		timer.stop()
 		timepress = 0
 	else:
-		time = 0
+		timepress = 0
 func _on_timer_timeout() -> void:
 	time += 1
 	if(time >= 1):

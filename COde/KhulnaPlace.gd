@@ -15,8 +15,14 @@ var path = 'res://Scene/khulna.tscn'
 func _on_timer_timeout() -> void:
 	time += 1
 	if(time >= 1):
-		timer.start()
-
-
+		timer.stop()
 func _on_button_pressed() -> void:
 	timepress += 1
+	if(timepress == 1):
+		timer.start()
+	elif(timepress == 2 & time < 1):
+		get_tree().change_scene_to_file(path)
+		timer.stop()
+		timepress = 0
+	else:
+		timepress = 0
