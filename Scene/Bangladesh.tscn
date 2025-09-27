@@ -111,6 +111,7 @@ offset_right = -23.3528
 offset_bottom = -3.28182
 rotation = -0.785397
 scale = Vector2(2.48505, 6.53988)
+disabled = true
 
 [node name="Area2D" type="Area2D" parent="MapProjectRangpurPlace" groups=["RangpurPlace"]]
 
@@ -136,6 +137,7 @@ offset_top = -12.0
 offset_right = -18.0
 offset_bottom = -4.0
 scale = Vector2(5.84, 1.68)
+disabled = true
 
 [node name="Area2D" type="Area2D" parent="MapProjectMymensinghPlace" groups=["MymensinghPlace"]]
 
@@ -168,6 +170,7 @@ grow_horizontal = 2
 grow_vertical = 2
 rotation = 1.309
 scale = Vector2(10.2088, 2.61528)
+disabled = true
 
 [node name="Area2D" type="Area2D" parent="MapProjectKhulnaPlace" groups=["KhulnaPlace"]]
 
@@ -201,6 +204,7 @@ grow_horizontal = 2
 grow_vertical = 2
 rotation = 0.174533
 scale = Vector2(5.84, 4.35801)
+disabled = true
 
 [node name="Area2D" type="Area2D" parent="MapProjectRajsahiPlace" groups=["RajsahiPlace"]]
 
@@ -234,6 +238,7 @@ grow_horizontal = 2
 grow_vertical = 2
 rotation = 2.09439
 scale = Vector2(5.42144, 4.55023)
+disabled = true
 
 [node name="Area2D" type="Area2D" parent="MapProjectDhakaPlace" groups=["DhakaPlace"]]
 
@@ -247,7 +252,6 @@ shape = SubResource("CircleShape2D_htxhm")
 process_callback = 0
 
 [node name="MapProjectChittagongPlace" type="Sprite2D" parent="."]
-visible = false
 position = Vector2(490, 256)
 texture = ExtResource("13_jhov2")
 script = ExtResource("14_xrxxe")
@@ -268,6 +272,7 @@ grow_horizontal = 2
 grow_vertical = 2
 rotation = 1.309
 scale = Vector2(8.99801, 2.90711)
+disabled = true
 
 [node name="Button" type="Button" parent="MapProjectChittagongPlace"]
 modulate = Color(1, 1, 1, 0)
@@ -278,6 +283,7 @@ offset_right = -9.0
 offset_bottom = -38.0
 rotation = 1.309
 scale = Vector2(4, 1.79)
+disabled = true
 
 [node name="Area2D" type="Area2D" parent="MapProjectChittagongPlace" groups=["ChittagongPlace"]]
 
@@ -315,6 +321,7 @@ offset_bottom = -409.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(4.04, 5.72001)
+disabled = true
 
 [node name="Area2D" type="Area2D" parent="MapProjectBarisalPlace" groups=["BarishalPlace"]]
 position = Vector2(-4, -2)
@@ -888,12 +895,17 @@ theme_override_styles/normal = SubResource("StyleBoxTexture_gt6bd")
 [connection signal="pressed" from="MapProjectKhulnaPlace/Button" to="MapProjectKhulnaPlace" method="_on_button_pressed"]
 [connection signal="area_entered" from="MapProjectKhulnaPlace/Area2D" to="MapProjectKhulnaPlace" method="_on_area_2d_area_entered"]
 [connection signal="timeout" from="MapProjectKhulnaPlace/Timer" to="MapProjectKhulnaPlace" method="_on_timer_timeout"]
+[connection signal="pressed" from="MapProjectRajsahiPlace/Button" to="MapProjectRajsahiPlace" method="_on_button_pressed"]
 [connection signal="area_entered" from="MapProjectRajsahiPlace/Area2D" to="MapProjectRajsahiPlace" method="_on_area_2d_area_entered"]
 [connection signal="timeout" from="MapProjectRajsahiPlace/Timer" to="MapProjectRajsahiPlace" method="_on_timer_timeout"]
+[connection signal="pressed" from="MapProjectDhakaPlace/Button" to="MapProjectDhakaPlace" method="_on_button_pressed"]
 [connection signal="area_entered" from="MapProjectDhakaPlace/Area2D" to="MapProjectDhakaPlace" method="_on_area_2d_area_entered"]
 [connection signal="timeout" from="MapProjectDhakaPlace/Timer" to="MapProjectDhakaPlace" method="_on_timer_timeout"]
+[connection signal="pressed" from="MapProjectChittagongPlace/Button2" to="MapProjectChittagongPlace" method="_on_button_2_pressed"]
+[connection signal="pressed" from="MapProjectChittagongPlace/Button" to="MapProjectChittagongPlace" method="_on_button_pressed"]
 [connection signal="area_entered" from="MapProjectChittagongPlace/Area2D" to="MapProjectChittagongPlace" method="_on_area_2d_area_entered"]
 [connection signal="timeout" from="MapProjectChittagongPlace/Timer" to="MapProjectChittagongPlace" method="_on_timer_timeout"]
+[connection signal="pressed" from="MapProjectBarisalPlace/Button" to="MapProjectBarisalPlace" method="_on_button_pressed"]
 [connection signal="area_entered" from="MapProjectBarisalPlace/Area2D" to="MapProjectBarisalPlace" method="_on_area_2d_area_entered"]
 [connection signal="timeout" from="MapProjectBarisalPlace/Timer" to="MapProjectBarisalPlace" method="_on_timer_timeout"]
 [connection signal="button_down" from="MapProjectSylhet/Button" to="MapProjectSylhet" method="_on_button_button_down"]
