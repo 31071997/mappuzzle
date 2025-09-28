@@ -1,6 +1,12 @@
 extends Sprite2D
 var change = preload('res://Map/map_project_chittagong.png')
 @onready var label: Label = $"../Label"
+@onready var button_2: Button = $Button2
+@onready var button: Button = $Button
+func _process(delta: float) -> void:
+	if(Score.score >= 8):
+		button.disabled = false
+		button_2.disabled = false
 func _on_area_2d_area_entered(area: Area2D) -> void:
 	if area.is_in_group('Chittagong'):
 		texture = change
@@ -13,10 +19,11 @@ var path = 'res://Scene/chittagong.tscn'
 func press():
 	timepress += 1
 	if(timepress == 1):
+		time = 0
 		timer.start()
 	elif(timepress == 2 and time < 1):
 		get_tree().change_scene_to_file(path)
-		time.stop()
+		timer.stop()
 		timepress = 0
 	else:
 		timepress = 0

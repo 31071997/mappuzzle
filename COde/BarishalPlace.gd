@@ -1,7 +1,7 @@
 extends Sprite2D
 var change = preload('res://Map/map_project_barisal.png')
 @onready var label: Label = $"../Label"
-@onready var button: Button = $"../MapProjectDhakaPlace/Button"
+@onready var button: Button = $Button
 func _process(delta: float) -> void:
 	if(Score.score >= 8):
 		button.disabled = false
@@ -21,10 +21,11 @@ func _on_timer_timeout() -> void:
 func _on_button_pressed() -> void:
 	timepress += 1
 	if(timepress == 1):
-		time.start()
-	elif(timepress == 1 and time < 1):
+		time = 0
+		timer.start()
+	elif(timepress == 2 and time < 1):
 		get_tree().change_scene_to_file(path)
-		timepress = 0
 		timer.stop()
+		timepress = 0
 	else:
 		timepress = 0

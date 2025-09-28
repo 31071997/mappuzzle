@@ -1,3 +1,10 @@
-[gd_scene format=3 uid="uid://cne4vee28v08t"]
+[gd_scene load_steps=2 format=3 uid="uid://cne4vee28v08t"]
+
+[ext_resource type="Texture2D" uid="uid://q0keewvjdbrl" path="res://Map/map_project_mymensingh.png" id="1_spr8c"]
 
 [node name="Mymensingh" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(576, 322)
+scale = Vector2(5, 5)
+texture = ExtResource("1_spr8c")

@@ -1,3 +1,10 @@
-[gd_scene format=3 uid="uid://bb5hj5f3843be"]
+[gd_scene load_steps=2 format=3 uid="uid://bb5hj5f3843be"]
+
+[ext_resource type="Texture2D" uid="uid://0vf0teg3uhbn" path="res://Map/map_project_rajsahi.png" id="1_3a352"]
 
 [node name="Rajshahi" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(576, 322)
+scale = Vector2(5, 5)
+texture = ExtResource("1_3a352")

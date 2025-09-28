@@ -21,6 +21,7 @@ func _on_timer_timeout() -> void:
 func _on_button_pressed() -> void:
 	timepress += 1
 	if(timepress == 1):
+		time = 0
 		timer.start()
 	elif(timepress == 2 and time < 1):
 		get_tree().change_scene_to_file(path)

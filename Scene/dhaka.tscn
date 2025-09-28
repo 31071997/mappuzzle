@@ -1,3 +1,10 @@
-[gd_scene format=3 uid="uid://bdw08pw0pwso2"]
+[gd_scene load_steps=2 format=3 uid="uid://bdw08pw0pwso2"]
+
+[ext_resource type="Texture2D" uid="uid://dsd7qd0b4fcr7" path="res://Map/map_project_dhaka.png" id="1_7ej7g"]
 
 [node name="Dhaka" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(576, 322)
+scale = Vector2(5, 5)
+texture = ExtResource("1_7ej7g")

@@ -1,3 +1,10 @@
-[gd_scene format=3 uid="uid://cu4o17yvnqn3m"]
+[gd_scene load_steps=2 format=3 uid="uid://cu4o17yvnqn3m"]
+
+[ext_resource type="Texture2D" uid="uid://dk02uqy8jjei8" path="res://Map/map_project_khulna.png" id="1_s3ap3"]
 
 [node name="Khulna" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(576, 322)
+scale = Vector2(5, 5)
+texture = ExtResource("1_s3ap3")

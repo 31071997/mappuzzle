@@ -1,3 +1,10 @@
-[gd_scene format=3 uid="uid://sk3do0s6yyfw"]
+[gd_scene load_steps=2 format=3 uid="uid://sk3do0s6yyfw"]
+
+[ext_resource type="Texture2D" uid="uid://b6bf5sllvqets" path="res://Map/map_project_chittagong.png" id="1_2mmfe"]
 
 [node name="Chittagong" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(576, 322)
+scale = Vector2(4, 4)
+texture = ExtResource("1_2mmfe")
