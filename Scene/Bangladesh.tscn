@@ -870,6 +870,7 @@ icon_alignment = 1
 vertical_icon_alignment = 2
 
 [node name="Label" type="Label" parent="."]
+process_mode = 3
 offset_left = 44.0
 offset_top = 579.0
 offset_right = 92.0
