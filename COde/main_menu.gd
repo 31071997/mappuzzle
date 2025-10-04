@@ -1,5 +1,5 @@
 extends Control
-var url1 = 'res://Scene/Bangladesh.tscn'
+var url1 = 'res://Scene/options.tscn'
 var count = 0
 @onready var audio_stream_player_2d: AudioStreamPlayer2D = $AudioStreamPlayer2D
 func _on_button_pressed() -> void:
