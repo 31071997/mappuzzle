@@ -4,8 +4,34 @@
 [ext_resource type="Texture2D" uid="uid://t1txq3673bp7" path="res://Map/BDred_bangladesh.png" id="1_ch5ns"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5r7rd"]
+bg_color = Color(1, 0, 0, 0.0823529)
+border_width_left = 5
+border_width_top = 29
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0.309804, 0.00392157, 0.490196)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+corner_detail = 5
+expand_margin_left = 10.0
+expand_margin_top = 31.0
+expand_margin_right = 10.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_btsos"]
+bg_color = Color(1, 0, 0, 0.945098)
+border_width_left = 10
+border_width_top = 100
+border_width_right = 10
+border_width_bottom = 10
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+corner_detail = 16
+expand_margin_top = 1000.0
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_5r7rd")
@@ -17,14 +43,15 @@ texture = ExtResource("1_ch5ns")
 [node name="Button" type="Button" parent="Sprite2D"]
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
-offset_left = -94.0
-offset_top = -131.0
-offset_right = 98.0
-offset_bottom = 125.0
+offset_left = -190.0
+offset_top = -323.0
+offset_right = 2.0
+offset_bottom = -67.0
 
 [node name="Window" type="Window" parent="."]
+transparent_bg = true
 initial_position = 2
-visible = false
+size = Vector2i(1000, 500)
 theme_override_styles/embedded_border = SubResource("StyleBoxFlat_5r7rd")
 theme_override_styles/embedded_unfocused_border = SubResource("StyleBoxFlat_btsos")
 
@@ -43,8 +70,7 @@ layout_mode = 2
 [node name="Labeldescription" type="Label" parent="Window/Label/ScrollContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Button" type="Button" parent="Window/Label"]
-layout_mode = 2
+[node name="Button" type="Button" parent="Window"]
 offset_right = 8.0
 offset_bottom = 8.0
 
