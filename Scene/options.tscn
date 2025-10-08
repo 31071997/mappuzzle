@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://1plh2iy4ss1c"]
+[gd_scene load_steps=6 format=3 uid="uid://1plh2iy4ss1c"]
 
 [ext_resource type="Script" uid="uid://clyqr6xtgibm" path="res://COde/options.gd" id="1_5r7rd"]
 [ext_resource type="Texture2D" uid="uid://t1txq3673bp7" path="res://Map/BDred_bangladesh.png" id="1_ch5ns"]
+[ext_resource type="FontFile" uid="uid://dpquv7mhmug8f" path="res://fonts/Press_Start_2P/PressStart2P-Regular.ttf" id="3_btsos"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5r7rd"]
 bg_color = Color(1, 0, 0, 0.0823529)
@@ -43,21 +44,35 @@ texture = ExtResource("1_ch5ns")
 [node name="Button" type="Button" parent="Sprite2D"]
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
-offset_left = -190.0
-offset_top = -323.0
-offset_right = 2.0
-offset_bottom = -67.0
+offset_left = -96.0
+offset_top = -130.0
+offset_right = 96.0
+offset_bottom = 126.0
 
 [node name="Window" type="Window" parent="."]
 transparent_bg = true
 initial_position = 2
 size = Vector2i(1000, 500)
+visible = false
 theme_override_styles/embedded_border = SubResource("StyleBoxFlat_5r7rd")
 theme_override_styles/embedded_unfocused_border = SubResource("StyleBoxFlat_btsos")
 
 [node name="Label" type="Label" parent="Window"]
-offset_right = 40.0
-offset_bottom = 23.0
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -128.0
+offset_top = 22.0
+offset_right = 32.0
+offset_bottom = 45.0
+grow_horizontal = 2
+scale = Vector2(2, 2)
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 1, 0, 1)
+theme_override_fonts/font = ExtResource("3_btsos")
+text = "Bangladesh"
+horizontal_alignment = 1
 
 [node name="ScrollContainer" type="ScrollContainer" parent="Window/Label"]
 layout_mode = 0
@@ -70,9 +85,28 @@ layout_mode = 2
 [node name="Labeldescription" type="Label" parent="Window/Label/ScrollContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Button" type="Button" parent="Window"]
-offset_right = 8.0
-offset_bottom = 8.0
+[node name="ButtonTransation" type="Button" parent="Window"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -38.0
+offset_top = -62.0
+offset_right = 37.0
+offset_bottom = -27.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(1, 1.5)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 1, 0, 1)
+theme_override_fonts/font = ExtResource("3_btsos")
+text = "Proceed"
+flat = true
+icon_alignment = 1
 
 [connection signal="pressed" from="Sprite2D/Button" to="." method="_on_button_pressed"]
 [connection signal="close_requested" from="Window" to="." method="_on_window_close_requested"]
+[connection signal="pressed" from="Window/ButtonTransation" to="." method="_on_button_transation_pressed"]

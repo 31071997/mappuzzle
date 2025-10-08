@@ -12,3 +12,7 @@ func _on_button_pressed() -> void:
 
 func _on_window_close_requested() -> void:
 	window.hide()
+
+
+func _on_button_transation_pressed() -> void:
+	get_tree().change_scene_to_file(path)
